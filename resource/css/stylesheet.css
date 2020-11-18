@@ -1,4 +1,141 @@
+@charset "utf-8";
 .swiper-container{
-    width: 600px;
+    width: 100%;
     height: 300px;
+}
+a{
+    text-decoration: none;
+}
+#header {
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    background:white;
+    z-index:1000;
+    height:110px;
+    line-height:110px;
+    overflow:hidden;
+    -webkit-transition: height 0.3s;
+    -moz-transition: height 0.3s;
+    transition: height 0.3s;
+    list-style: none;
+}
+.logo {
+    margin-right: 145px;
+    justify-content: center;
+    float: left;
+}
+.logo img{
+    vertical-align: middle;
+}
+.menuLeft {
+    float: left;
+}
+.menuRight {
+    float: right;
+}
+.menuRight li a {
+    font-size: 15px;
+}
+.menuLeft li a,
+.menuRight li a {
+    -webkit-transition: color 0.3s;
+    -moz-transition: color 0.3s;
+    transition: color 0.3s;
+}
+.menuLeft li a:hover,
+.menuRight li a:hover {
+    color: #4B6E64;
+    text-decoration: underline;
+}
+#header.roll {
+    height: 85px;
+    line-height:85px;
+    background : #C2E8DD;
+}
+
+#header .navi {
+    max-width:1200px;
+    margin:0 auto;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+#header.roll .navi {
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+padding: 0 10px 20px 30px;
+.navi ul{margin:0 auto;padding:0; list-style:none;}
+.navi ul li{float:left;font-size:17px;font-weight:bold;}
+.navi ul li a  {color:#252729; margin: 0 35px;position: relative; top: 3px;}
+#header .roll .navi ul li a  {height: 85px;}
+
+#main-content{
+    width: 100%;
+    height: 973 rem;
+    background-color: red;
+}
+#indicator{
+    position:fixed;
+    width: 125.24 rem;
+    height: 169 rem;
+    justify-content: center;
+    background-color: orange;
+}
+#indicator li a{
+    text-decoration: none;
+}
+#introduction-content{
+    width: 100%;
+    height: 973 rem;
+    background-color: yellow;
+}
+#responsive-banner-start{
+    width: 100%;
+    height: 523 rem;
+    background-color: greenyellow;
+}
+#feature-content{
+    width: 100%;
+    height: 973 rem;
+    background-color: green;
+}
+#review-content{
+    width: 100%;
+    height: 973 rem;
+    background-color: powderblue;
+}
+#statistic-content{
+    width: 100%;
+    height: 973 rem;
+    background-color: blue;
+}
+#column-content{
+    width: 100%;
+    height: 973 rem;
+    background-color: violet;
+}
+#responsive-banner-end{
+    width: 100%;
+    height: 523 rem;
+    background-color: greenyellow;
+}
+#download-content{
+    width: 100%;
+    height: 973 rem;
+    background-color: pink;
+}
+#scroll-banner{
+    width: 100%;
+    height: 289 rem;
+    background-color: tomato;
+}
+#footer-info{
+    width: 100%;
+    height: 389 rem;
+    background-color: lemonchiffon;
 }

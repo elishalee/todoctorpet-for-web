@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
     <head>
         <!-- 사이트 이름 -->
         <title>토닥펫</title>
@@ -35,47 +35,32 @@
         <meta name="twitter:description" content="반려동물을 위한 최고의 소셜 플랫폼"/>
         <!-- 스와이퍼 -->
         <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
-        <link rel="stylesheet" href="./resource/css/stylesheet.css">
+        <!-- 제이쿼리 CDN -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="resource/css/reset.css">
+        <link rel="stylesheet" href="resource/css/stylesheet.css">
+        <script src="resource/js/script.js"></script>
     </head>
     <body>
-        <!-- 상단 navigation bar(menu) -->
-        <nav class=" ">
-            <div class=" ">
-                <div class=" ">
-                    <a href="#none"><img src="resource/images/whiteLogo.png"></a>
-                </div>
-                <div class=" ">
-                    <ul class=" ">
-                        <li class=" ">
-                            <a href="#none">About Us</a>
-                        </li>
-                        <li class=" " >
-                            <a href="#none">Event</a>
-                        </li>
-                        <li class=" ">
-                            <a href="#none">Recruit</a>
-                        </li>
-                        <li class=" ">
-                            <a href="#none">Contact</a>
-                        </li>
+            <!-- 상단 navigation bar(menu) -->
+            <header id="header">
+                <div class="navi">
+                    <a class="logo" href="#none"><img src="resource/images/logoOriginal.svg"></a>
+                    <ul class="menuLeft">
+                        <li><a href="#none">About Us</a></li>
+                        <li><a href="#none">Event</a></li>
+                        <li><a href="#none">Recruit</a></li>
+                        <li><a href="#none">Contact</a></li>
                     </ul>
-
-                    <!-- 오른쪽 navigation bar(menu) -->
-                    <ul class=" ">
-                        <li>
-                            <a href="#none">Sign In</a>
-                        </li>
-                        <li>
-                            <a href="#none">Sign Up</a>
-                        </li>
+                    <ul class="menuRight">
+                        <li><a href="#none">Sign In</a></li>
+                        <li><a href="#none">Sign Up</a></li>
                     </ul>
                 </div>
-            </div>
-        </nav>
+            </header>
 
-        <!-- 오른쪽 인디케이터 -->
-        <section class=" ">
-            <ul class=" ">
+            <!-- 오른쪽 인디케이터 -->
+            <ul id="indicator">
                 <li class=" ">
                     <a href="#none">
                         <span>메인</span>
@@ -113,87 +98,100 @@
                 </li>
             </ul>
 
-            <!-- 메인 -->
-            <div class="swiper-container">
-                <div class="swiper-wrapper">
-                <!-- 첫 번쨰 캐러셀 배너 -->
-                    <div class="swiper-slide">
-                        <p>반려동물을 위한 최고의 소셜 플랫폼</p>
-                        <h3>언제 어디서나<br>누구에게나<br>우리 아이들에 대해 공유해요</h3>
-                        <!-- <img src="./resource/images/main1.png"> -->
-                    </div>
-                    <!-- 두 번쨰 캐러셀 배너 -->
-                    <div class="swiper-slide">
-                        <p>반려동물을 위한 최고의 소셜 플랫폼</p>
-                        <h3>언제 어디서나<br>누구에게나<br>우리 아이들에 대해 공유해요</h3>
-                        <!-- <img src="./resource/images/main2.png"> -->
-                    </div>
-                    <!-- 세 번쨰 캐러셀 배너 -->
-                    <div class="swiper-slide">
-                        <p>반려동물을 위한 최고의 소셜 플랫폼</p>
-                        <h3>언제 어디서나<br>누구에게나<br>우리 아이들에 대해 공유해요</h3>
+            <section id="content">
+                <!-- 메인 -->
+                <div id="main-content" class=" ">
+                    <div id="swiper-container" class=" ">
+                            <div class="swiper-wrapper">
+                            <!-- 첫 번쨰 캐러셀 배너 -->
+                                <div class="swiper-slide">
+
+                                    <p>반려동물을 위한 최고의 소셜 플랫폼</p>
+                                    <h3>언제 어디서나<br>누구에게나<br>우리 아이들에 대해 공유해요</h3>
+                                    <!-- <img src="resource/images/main1.png"> -->
+
+                                </div>
+                                <!-- 두 번쨰 캐러셀 배너 -->
+                                <div class="swiper-slide">
+                                    <p>반려동물을 위한 최고의 소셜 플랫폼</p>
+                                    <h3>언제 어디서나<br>누구에게나<br>우리 아이들에 대해 공유해요</h3>
+                                    <!-- <img src="resource/images/main2.png"> -->
+                                </div>
+                                <!-- 세 번쨰 캐러셀 배너 -->
+                                <div class="swiper-slide">
+                                    <p>반려동물을 위한 최고의 소셜 플랫폼</p>
+                                    <h3>언제 어디서나<br>누구에게나<br>우리 아이들에 대해 공유해요</h3>
+                                </div>
+                            </div>
+                        <div class="swiper-pagination"></div>
                     </div>
                 </div>
-                <div class="swiper-pagination"></div>
-            </div>
 
-            <!-- 개요 -->
-            <div id=" " class=" ">
+                <!-- 개요 -->
+                <div id="introduction-content" class=" ">
+                    <div class=" ">
+                        <img src="resource/images/animal1.svg" />
+                        <img src="resource/images/animal2.svg" />
+                        <img src="resource/images/animal3.svg" />
+                        <img src="resource/images/animal4.svg" />
+                        <h4>우리는 반려동물에 대해 얼마나 알고 있을까?</h4>
+                        <p>
+                            반려동물과 함께 해도 모르는 것은 여전히 많습니다.<br>
+                            공생은 정확한 정보를 앎으로부터 시작합니다.
+                        </p>
+                    </div>
+                </div>
+            
+            <!-- 반응형 배너 시작 -->
+            <div id="responsive-banner-start" class="">
                 <div class=" ">
-                    <img src="resource/images/animals.png" />
-                    <h4>우리는 반려동물에 대해 얼마나 알고 있을까?</h4>
-                    <p>
-                        반려동물과 함께 해도 모르는 것은 여전히 많습니다.<br>
-                        공생은 정확한 정보를 앎으로부터 시작합니다.
-                    </p>
+
                 </div>
-                <!-- 반응형 배너 -->
-                <div class=" "></div>
             </div>
 
-            <!-- 기능 -->
-            <div id=" " class=" ">
-                <h4>오로지 우리의 동물 친구들을 위한 플랫폼</h4>
-                <p>
-                    동물병원 가격 비교, 리뷰 및 동물 개체에 따른 질병 확인과<br>
-                    커뮤니티 등의 서비스 모두 한 플랫폼에서 이용하실 수 있습니다.
-                </p>
-                <ul class=" ">
-                    <li>
-                        <div>
-                            <figure><img src="resource/images/review.png" alt="Review"></figure>
-                        </div>
-                        <p>동물병원 리뷰</p>
-                    </li>
-                    <li>
-                        <div>
-                            <figure><img src="resource/images/hospital.png" alt="Hospital"></figure>
-                        </div>
-                        <p>동물병원 정보</p>
-                    </li>
-                    <li>
-                        <div>
-                            <figure><img src="resource/images/disease.png" alt="Disease"></figure>
-                        </div>
-                        <p>반려동물 질병</p>
-                    </li>
-                    <li>
-                        <div>
-                            <figure><img src="resource/images/community.png" alt="Community"></figure>
-                        </div>
-                        <p>커뮤니티</p>
-                    </li>
-                    <li>
-                        <div>
-                            <figure><img src="resource/images/column.png" alt="Column"></figure>
-                        </div>
-                        <p>펫 컬럼</p>
-                    </li>
-                </ul>   
-            </div>
+                <!-- 기능 -->
+                <div id="feature-content" class=" ">
+                    <h4>오로지 우리의 동물 친구들을 위한 플랫폼</h4>
+                    <p>
+                        동물병원 가격 비교, 리뷰 및 동물 개체에 따른 질병 확인과<br>
+                        커뮤니티 등의 서비스 모두 한 플랫폼에서 이용하실 수 있습니다.
+                    </p>
+                    <ul class="">
+                        <li>
+                            <div>
+                                <figure><img src="resource/images/review.svg" alt="Review"></figure>
+                            </div>
+                            <p>동물병원 리뷰</p>
+                        </li>
+                        <li>
+                            <div>
+                                <figure><img src="resource/images/hospital.svg" alt="Hospital"></figure>
+                            </div>
+                            <p>동물병원 정보</p>
+                        </li>
+                        <li>
+                            <div>
+                                <figure><img src="resource/images/disease.svg" alt="Disease"></figure>
+                            </div>
+                            <p>반려동물 질병</p>
+                        </li>
+                        <li>
+                            <div>
+                                <figure><img src="resource/images/community.svg" alt="Community"></figure>
+                            </div>
+                            <p>커뮤니티</p>
+                        </li>
+                        <li>
+                            <div>
+                                <figure><img src="resource/images/column.svg" alt="Column"></figure>
+                            </div>
+                            <p>펫 컬럼</p>
+                        </li>
+                    </ul>   
+                </div>
 
                 <!-- 리뷰.... 드디어!!! 이제 곧 새벽 5시다 ㅠㅠㅠㅠ -->
-                <div class=" ">
+                <div id="review-content" class=" ">
                     <h4>과장 홍보 없는 진실된 리뷰</h4>
                     <p>
                         업계 최대 규모의 700만 건의 실 사용자 리뷰는<br>
@@ -211,7 +209,7 @@
                 </div>
                 
                 <!-- 통계 -->
-                <div class=" ">
+                <div id="statistic-content" class=" ">
                     <h4>오늘의 토닥펫</h4>
                     <p>
                         토닥펫은 매일 매일 성장하고 있는 플랫폼입니다 :)
@@ -228,7 +226,7 @@
                 </div>
                 
                 <!-- 펫 컬럼 -->
-                <div class=" ">
+                <div id="column-content" class=" ">
                     <h4>
                         수의사가 직접<br>
                         연재하는 펫 컬럼
@@ -239,19 +237,24 @@
                         <br>
                         토닥펫 앱에서 펫 컬럼을 확인하세요 :)
                     </p>
-                    <!-- 반응형 배너 -->
-                    <div class=" "></div>
+                </div>
+
+                <!-- 반응형 배너 끝 -->
+                <div id="responsive-banner-end" class="">
+                    <div class=" ">
+
+                    </div>
                 </div>
 
                 <!-- 다운로드 -->
-                <div class=" ">
+                <div id="download-content" class=" ">
                     <img src="resource/images/confetti.png" alt="confetti">
                     <h4>우리는 당신을 기다리고 있어요</h4>
                     <p>
                         사랑스러운 작은 동물 친구들을 위해<br>
                         지금 당장
                     </p>
-                    <img src="resource/images/whiteLogo.png" alt="logo">
+                    <img src="resource/images/logo.png" alt="logo">
                     <p>
                         을 경험하세요!
                     </p>
@@ -262,15 +265,16 @@
                     </div>
                 </div>
 
-                <div class=" ">
+                <!-- 스크롤 배너 -->
+                <div id="scroll-banner" class=" ">
                     <div class=" ">
                         <ul>
-                            <li><img src="./resource/images/sliderImage1.jpg" style="width: 260px; height: 260px"></li>
-                            <li><img src="./resource/images/sliderImage2.jpg" style="width: 260px; height: 260px"></li>
-                            <li><img src="./resource/images/sliderImage3.jpg" style="width: 260px; height: 260px"></li>
-                            <li><img src="./resource/images/sliderImage4.jpg" style="width: 260px; height: 260px"></li>
-                            <li><img src="./resource/images/sliderImage5.jpg" style="width: 260px; height: 260px"></li>
-                            <li><img src="./resource/images/sliderImage6.jpg" style="width: 260px; height: 260px"></li>
+                            <li><img src="resource/images/sliderImage1.jpg" style="width: 260px; height: 260px"></li>
+                            <li><img src="resource/images/sliderImage2.jpg" style="width: 260px; height: 260px"></li>
+                            <li><img src="resource/images/sliderImage3.jpg" style="width: 260px; height: 260px"></li>
+                            <li><img src="resource/images/sliderImage4.jpg" style="width: 260px; height: 260px"></li>
+                            <li><img src="resource/images/sliderImage5.jpg" style="width: 260px; height: 260px"></li>
+                            <li><img src="resource/images/sliderImage6.jpg" style="width: 260px; height: 260px"></li>
                         </ul>
                     </div>
                 </div>
@@ -278,10 +282,10 @@
         <!-- 컨텐츠 끝 -->
 
         <!-- 푸터 -->
-        <footer class=" ">
+        <footer id="footer">
             <div class=" ">
                 <div class=" ">
-                    <img src="resource/images/whiteLogo.png" alt="logo">
+                    <img src="resource/images/logoOriginal.svg" alt="logo">
                 </div>
                 
                 <div class=" ">
@@ -302,7 +306,7 @@
                         <p>© TODOCTORPET. ALL RIGHTS RESERVED</p>
                     </div>
                     <div class=" ">
-                        <a href="#none"><img src=" "></a>
+                        <a href="#none"><img src="resource/images/instagram.png"></a>
                         <a href="#none"><img src="resource/images/facebook.png"></a>
                         <a href="#none"><img src="resource/images/twitter.png"></a>
                     </div>
