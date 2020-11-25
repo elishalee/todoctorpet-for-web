@@ -62,41 +62,43 @@
 
             <!-- 오른쪽 인디케이터 -->
             <ul id="indicator">
-                <li class="main">
-                    <a href="#main-content">
-                        <span>메인</span>
-                    </a> 
-                </li>
-                <li class="introduction">
-                    <a href="#introduction-content">
-                        <span>개요</span>
-                    </a> 
-                </li>
-                <li class="feature">
-                    <a href="#feature-content">
-                        <span>기능</span>
-                    </a> 
-                </li>
-                <li class="review">
-                    <a href="#review-content">
-                        <span>리뷰</span>
-                    </a> 
-                </li>
-                <li class="statistic">
-                    <a href="#statistic-content">
-                        <span>통계</span>
-                    </a> 
-                </li>
-                <li class="column">
-                    <a href="#column-content">
-                        <span>펫 컬럼</span>
-                    </a> 
-                </li>
-                <li class="download">
-                    <a href="#download-content">
-                        <span>다운로드</span>
-                    </a> 
-                </li>
+                    <div class="inner-indicator">
+                        <li class="main">
+                            <a href="#main-content">
+                                <span>메인</span>
+                            </a> 
+                        </li>
+                        <li class="introduction">
+                            <a href="#introduction-content">
+                                <span>개요</span>
+                            </a> 
+                        </li>
+                        <li class="feature">
+                            <a href="#feature-content">
+                                <span>기능</span>
+                            </a> 
+                        </li>
+                        <li class="review">
+                            <a href="#review-content">
+                                <span>리뷰</span>
+                            </a> 
+                        </li>
+                        <li class="statistic">
+                            <a href="#statistic-content">
+                                <span>통계</span>
+                            </a> 
+                        </li>
+                        <li class="column">
+                            <a href="#column-content">
+                                <span>펫 컬럼</span>
+                            </a> 
+                        </li>
+                        <li class="download">
+                            <a href="#download-content">
+                                <span>다운로드</span>
+                            </a> 
+                        </li>
+                    </div>
             </ul>
 
             <section id="content">
@@ -203,7 +205,7 @@
                                         <p>펫 컬럼</p>
                                     </figure>
                                 </div>
-                            </li>
+                            </li>                        
                         </ul>   
                     </div>
                 </div>
@@ -230,21 +232,26 @@
                 
                 <!-- 통계 -->
                 <div id="statistic-content">
-                <div class="inner">
-                    <h4>오늘의 토닥펫</h4>
-                    <p>
-                        토닥펫은 매일 매일 성장하고 있는 플랫폼입니다 :)
-                    </p>
-                    <div>
-                        <!-- <img src="resource/images/ball.png" alt="ball"> -->
+                    <div class="inner">
+                        <h4>오늘의 토닥펫</h4>
+                        <p>
+                            토닥펫은 매일 매일 성장하고 있는 플랫폼입니다 :)
+                        </p>
+                        <div class="circle">
+                            <div>
+                                <p>토닥펫에 만족하는 사용자의 비율</p>
+                                <p class="bigger-letter">93.2%</p>
+                            </div>
+                            <div>
+                                <p>등록된 반려동물 질병 정보</p>
+                                <p class="bigger-letter">13,478</p>
+                            </div>
+                            <div>
+                                <p>등록된 병원 리뷰</p>
+                                <p class="bigger-letter">7,937,854</p>
+                            </div>
+                        </div>
                     </div>
-                    <div>
-                        <!-- <img src="resource/images/graph1.png" alt="graph1">
-                        <img src="resource/images/graph2.png" alt="graph2">
-                        <img src="resource/images/graph3.png" alt="graph3">
-                        <img src="resource/images/graph4.png" alt="graph4"> -->
-                    </div>
-                </div>
                 </div>
                 
                 <!-- 펫 컬럼 -->
@@ -271,19 +278,18 @@
                 <div id="download-content">
                 <div class="inner">
                     <img src="resource/images/confetti.png" alt="Confetti">
-                    <h4>우리는 당신을 기다리고 있어요</h4>
-                    <p>
-                        사랑스러운 작은 동물 친구들을 위해<br>
-                        지금 당장
-                    </p>
-                    <img src="resource/images/logoWhite.svg" alt="Logo">
-                    <p>
-                        을 경험하세요!
-                    </p>
-                    
+                    <div class="text">
+                        <h4>우리는 당신을 기다리고 있어요</h4>
+                        <p>
+                            사랑스러운 작은 동물 친구들을 위해<br>
+                            지금 당장
+                            <img src="resource/images/logoWhite.svg" alt="Logo">
+                            &nbsp;을 경험하세요!
+                        </p>
+                    </div>
                     <div class="download-btn">
-                        <a href="#none"><img src="resource/images/androidDownBtn.png" alt="Android App" ></a>
-                        <a href="#none"><img src="resource/images/appleDownBtn.png" alt="Apple App" ></a>
+                        <a href="#none" class="android-btn"><img src="resource/images/androidDownBtn.svg" alt="Android App" ></a>
+                        <a href="#none" class="apple-btn"><img src="resource/images/appleDownBtn.svg" alt="Apple App" ></a>
                     </div>
                 </div>
                 </div>
