@@ -1,11 +1,13 @@
 @charset "utf-8";
-.swiper-container{
-    width: 100%;
-    height: 300px;
-}
+/* 공통 요소 */
 a {
     text-decoration: none;
 }
+li{
+    list-style: none;
+}
+
+/* 헤더 */
 #header {
     position:fixed;
     top:0;
@@ -73,112 +75,18 @@ a {
 .navi ul li a  {color:#252729; margin: 0 35px;position: relative; top: 3px;}
 #header .roll .navi ul li a  {height: 85px;}
 
+
+/* 메인 컨텐츠(캐러셀) */
+.swiper-container{
+    width: 100%;
+    height: 300px;
+}
 #main-content{
     margin-top: 110px;
     padding: 300px;
     width: 100%;
     height: 973 px;
     background-color: #C2E8DD;
-}
-#indicator {
-    position:fixed;
-    top: 400px;
-    right: 0px;
-    width: 125.24 px;
-    height: 169 px;
-    background-color: transparent;
-}
-#indicator li a {
-    text-decoration: none;
-}
-#introduction-content{
-    margin-top: 0px;
-    padding: 250px;
-    width: 100%;
-    height: 973 px;
-    background-color: #ffffff;
-    margin: 0px auto;
-}
-#introduction-content .inner li{
-    text-align: center;
-    list-style: none;
-    float: left;
-}
-.responsive-banner-start{
-    margin-top: 0px;
-    width: 100%;
-    height: 523 px;
-    background-image: url('../images/responsiveBanner.jpg');
-}
-#feature-content{
-    margin-top: 0px;
-    padding: 250px;
-    width: 100%;
-    height: 973 px;
-    background-color: #ffffff;
-}
-#review-content{
-    margin-top: 0px;
-    padding: 250px;
-    width: 100%;
-    height: 973 px;
-    background-color: #87D5D6;
-}
-#statistic-content{
-    margin-top: 0px;
-    padding: 250px;
-    width: 100%;
-    height: 973 px;
-    background-color: #B7F8DB;
-}
-#column-content{
-    margin-top: 0px;
-    padding: 250px;
-    width: 100%;
-    height: 973 px;
-    background-color: #ffffff;
-}
-.responsive-banner-end{
-    margin-top: 0px;
-    width: 100%;
-    height: 523 px;
-    background-image: url('../images/responsiveBanner.jpg');
-}
-#download-content{
-    margin-top: 0px;
-    padding: 250px;
-    width: 100%;
-    height: 973 px;
-    background-color: #90D4C2;
-}
-#scroll-banner{
-    margin-top: 123px;
-    width: 100%;
-    height: 289 px;
-}
-footer{
-    margin-top: 750px;
-    background-color: #ffffff;
-}
-.inner {
-    max-width: 1200px;
-}
-.inner .feature li {
-    float: left;
-    width: 200px;
-    margin-left: 53px;
-    text-align: center;
-}
-.inner .feature li:hover div {
-    background: #90D4C2;
-}
-.inner .feature div, .inner .feature figure {
-    border-radius: 50%;
-    width: 200px;
-    height: 200px;
-    background: #ffffff;
-    border-radius: 50%;
-    box-sizing: border-box;
 }
 #main-content .inner h3{
     line-height: 46px;
@@ -194,6 +102,71 @@ footer{
     color: #ffffff;
     text-align: center;
 }
+
+
+/* 인디케이터 */
+#indicator{
+    position:fixed;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    top: 40%;
+    right: 20px;
+    width: 125.24 px;
+    height: 169 px;
+    z-index: 1;
+    background-color: transparent;
+}
+#indicator li{
+    position: relative;
+    width: 10px;
+    height: 10px;
+    margin: 30px;
+    background: url('../images/Indicator-icon-default.svg');
+    background-size: cover;
+    cursor: pointer;
+}
+#indicator li:hover, #indicator li:active {
+    background: url('../images/Indicator-icon-hover.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 20px;
+    height: 20px;
+    margin: 30px;
+}
+#indicator li span{
+    width: 60px;
+    height: 10px;
+    border-radius: 10px;
+    background-color: #90D4C2;
+    font-size: 10px;
+    font-weight: bold;
+    text-align: center;
+    color: #ffffff;
+    padding: 2px 0 2px;
+    position: absolute;
+    top: 20%;
+    left: -80px;
+}
+
+/* 개요 콘텐츠 */
+#introduction-content{
+    margin-top: 0px;
+    padding: 250px;
+    width: 100%;
+    height: 973 px;
+    background-color: #ffffff;
+    margin: 0px auto;
+}
+.inner .animal{
+    text-align: center;
+}
+.inner .animal li {
+    width: 200px;
+    display: inline-block;
+    margin: -24px;
+}
 #introduction-content .inner h4 {
     margin-top: 127px;
     font-weight: bolder;
@@ -204,6 +177,52 @@ footer{
     margin-top: 49px;
     font-size: 25px;
     text-align: center;
+}
+
+/* 반응형 배너 */
+.responsive-banner-start{
+    margin-top: 0px;
+    padding: 250px;
+    width: 100%;
+    height: 523 px;
+    background-image: url('../images/responsiveBanner.jpg');
+    background-size: cover;
+}
+.responsive-banner-end{
+    margin-top: 0px;
+    padding: 250px;
+    width: 100%;
+    height: 523 px;
+    background-image: url('../images/responsiveBanner.jpg');
+    background-size: cover;
+}
+
+/* 기능 콘텐츠 */
+#feature-content{
+    margin-top: 0px;
+    padding: 250px;
+    width: 100%;
+    height: 973 px;
+    background-color: #ffffff;
+}
+#feature-content .feature{
+    padding-top: 200px;
+    text-align: center;
+}
+.inner .feature li {
+    width: 200px;
+    margin-left: 50px;
+    display: inline-block;
+}
+.inner .feature li:first-child{
+    margin-left: 0px;
+}
+.inner .feature div, .inner .feature figure {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    background: #ffffff;
+    box-sizing: border-box;
 }
 #feature-content h4 {
     font-weight: bolder;
@@ -217,6 +236,15 @@ footer{
     font-size: 25px;
     text-align: center;
 }
+
+/* 리뷰 콘텐츠 */
+#review-content{
+    margin-top: 0px;
+    padding: 250px;
+    width: 100%;
+    height: 973 px;
+    background-color: #87D5D6;
+}
 #review-content .inner h4 {
     font-weight: bolder;
     color: #ffffff;
@@ -228,6 +256,29 @@ footer{
     margin-top: 49px;
     font-size: 25px;
     text-align: center;
+}
+
+/* 통계 콘텐츠 */
+#statistic-content{
+    margin-top: 0px;
+    padding: 250px;
+    width: 100%;
+    height: 973 px;
+    background-color: #B7F8DB;
+    text-align: center;
+}
+#statistic-content .inner .circle{
+    display: inline-block;
+    margin-top: 55px;
+}
+#statistic-content .inner .circle div{
+    border-radius: 50%;
+    width: 240px;
+    height: 240px;
+    margin: 30px;
+    background: #87D5D6;
+    box-sizing: border-box;
+    float: left;
 }
 #statistic-content .inner h4 {
     font-weight: bolder;
@@ -241,6 +292,36 @@ footer{
     font-size: 25px;
     text-align: center;
 }
+#statistic-content .circle p{
+    color: #ffffff;
+    font-size: 14px;
+    padding-top: 30px;
+}
+#statistic-content .circle .bigger-letter{
+    color: #ffffff;
+    font-size: 40px;
+    margin-top: 5px;
+    font-weight: bolder;
+}
+
+/* 펫 컬럼 콘텐츠 */
+#column-content .inner{
+    margin-top: 0px;
+    padding: 250px;
+    width: 100%;
+    height: 973 px;
+    background-image: url('../images/column-bg-image.jpg');
+    background-size: cover;
+    z-index: 1;
+    position: relative;
+}
+#column-content .inner:after{
+    background: url('../images/column-bg-image.jpg');
+    opacity: 0.3!important; 
+    filter:alpha(opacity=30);
+    position: absolute;
+    z-index: -1;
+}
 #column-content .inner h4 {
     font-weight: bolder;
     color: #4B6E64;
@@ -253,22 +334,136 @@ footer{
     font-size: 25px;
     text-align: center;
 }
+
+/* 다운로드 콘텐츠 */
+#download-content{
+    margin-top: 0px;
+    padding: 250px;
+    width: 100%;
+    height: 973 px;
+    background-color: #8BD1A0;
+    text-align: center;
+}
+#download-content .download-btn {
+    margin-top: 100px;
+}
+#download-content .download-btn div {
+    display: inline-block;
+}
+#download-content .download-btn img{
+    padding: 10px;
+}
 #download-content .inner h4 {
     font-weight: bolder;
     color: #ffffff;
     font-size: 35px;
     text-align: center;
+    margin-top: 62px;
 }
 #download-content .inner p {
     color: #ffffff;
     margin-top: 49px;
     font-size: 25px;
     text-align: center;
+    line-height: 40px;
+}
+#download-content .inner .text img {
+    margin-left: 5px;
+}
+#android-btn:hover{
+    content: url('../images/androidDownBtn-hover.svg');
+}
+#ios-btn:hover{
+    content: url('../images/iosDownBtn-hover.svg');
+}
+
+/* 반응형 스크롤 배너 */
+#scroll-banner{
+    margin-top: 123px;
+    width: 100%;
+    height: 289 px;
+    text-align: center;
 }
 #scroll-banner .inner li{
-    float: left;
+    display: inline-block;
 }
-.company-info div ul {
-    float: left;
-    padding: 26px;
+
+/* 푸터 */
+footer{
+    padding-top: 96px;
+    padding-left: 250px;
+    padding-right: 250px;
+    width: 100%;
+    background-color: #ffffff;
 }
+footer .inner .footer-logo{
+    display: inline-block;
+    margin-top: 96px;
+    margin-bottom: 42px;
+}
+.info{
+    margin-bottom: 27px;
+}
+.info li{
+    display: inline-block;
+    padding-right: 40px;
+    color: #252729;
+    border-right: 1px solid #87D5D6;
+}
+.info li:nth-child(n+2){
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.info span{
+    font-weight: bold;
+}
+.service-info{
+    margin-bottom: 59px;
+}
+.service-info li{
+    display: inline-block;
+    padding-right: 40px;
+    font-weight: bold;
+    border-right: 1px solid #87D5D6;
+}
+.service-info li:nth-child(n+2){
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.service-info ul li a{
+    color: #252729;
+}
+.service-info li a:hover{
+    color: #87D5D6;
+    text-decoration: underline;
+    -webkit-transition: color 0.3s;
+    -moz-transition: color 0.3s;
+    transition: color 0.3s;
+}
+.footer-end{
+    margin-bottom: 78px;
+}
+.footer-end li{
+    display: inline-block;
+}
+.footer-end li:nth-child(n+2){
+    padding-left: 10px;
+    padding-right: 10px;  
+}
+.copyright{
+    padding-right: 1200px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

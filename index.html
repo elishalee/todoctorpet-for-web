@@ -108,26 +108,26 @@
                             <div class="swiper-wrapper">
                             <!-- 첫 번쨰 캐러셀 배너 -->
                                 <div class="swiper-slide">
-                                <div class="inner">
-                                    <p>반려동물을 위한 최고의 소셜 플랫폼</p>
-                                    <h3>언제 어디서나<br>누구에게나<br>우리 아이들에 대해 공유해요</h3>
-                                    <!-- <img src="resource/images/main1.png"> -->
-                                </div>
+                                    <div class="inner">
+                                        <p>반려동물을 위한 최고의 소셜 플랫폼</p>
+                                        <h3>언제 어디서나<br>누구에게나<br>우리 아이들에 대해 공유해요</h3>
+                                        <div class="animated moving circle"></div>
+                                    </div>
                                 </div>
                                 <!-- 두 번쨰 캐러셀 배너 -->
                                 <div class="swiper-slide">
-                                <div class="inner">
-                                    <p>반려동물을 위한 최고의 소셜 플랫폼</p>
-                                    <h3>언제 어디서나<br>누구에게나<br>우리 아이들에 대해 공유해요</h3>
-                                    <!-- <img src="resource/images/main2.png"> -->
+                                    <div class="inner">
+                                        <p>반려동물을 위한 최고의 소셜 플랫폼</p>
+                                        <h3>언제 어디서나<br>누구에게나<br>우리 아이들에 대해 공유해요</h3>
+                                        <!-- <img src="resource/images/main2.png"> -->
                                     </div>
                                 </div>
                                 <!-- 세 번쨰 캐러셀 배너 -->
                                 <div class="swiper-slide">
-                                <div class="inner">
-                                    <p>반려동물을 위한 최고의 소셜 플랫폼</p>
-                                    <h3>언제 어디서나<br>누구에게나<br>우리 아이들에 대해 공유해요</h3>
-                                </div>
+                                    <div class="inner">
+                                        <p>반려동물을 위한 최고의 소셜 플랫폼</p>
+                                        <h3>언제 어디서나<br>누구에게나<br>우리 아이들에 대해 공유해요</h3>
+                                    </div>
                                 </div>
                             </div>
                         <div class="swiper-pagination"></div>
@@ -137,12 +137,14 @@
                 <!-- 개요 -->
                 <div id="introduction-content">
                     <div class="inner">
-                        <ul>
-                            <li><img src="resource/images/animal1.svg" alt="Animal1" /></li>
-                            <li><img src="resource/images/animal2.svg" alt="Animal2" /></li>
-                            <li><img src="resource/images/animal3.svg" alt="Animal3" /></li>
-                            <li><img src="resource/images/animal4.svg" alt="Animal4" /></li>
-                        </ul>
+                        <div class="animal">
+                            <ul>
+                                <li><img src="resource/images/animal1.svg" alt="Animal1" /></li>
+                                <li><img src="resource/images/animal2.svg" alt="Animal2" /></li>
+                                <li><img src="resource/images/animal3.svg" alt="Animal3" /></li>
+                                <li><img src="resource/images/animal4.svg" alt="Animal4" /></li>
+                            </ul>
+                        </div>
                         <h4>우리는 반려동물에 대해 얼마나 알고 있을까?</h4>
                         <p>
                             반려동물과 함께 해도 모르는 것은 여전히 많습니다.<br>
@@ -288,8 +290,8 @@
                         </p>
                     </div>
                     <div class="download-btn">
-                        <a href="#none" class="android-btn"><img src="resource/images/androidDownBtn.svg" alt="Android App" ></a>
-                        <a href="#none" class="apple-btn"><img src="resource/images/appleDownBtn.svg" alt="Apple App" ></a>
+                        <a href="#none" class="android-btn"><img id="android-btn" src="resource/images/androidDownBtn.svg" alt="Android App" ></a>
+                        <a href="#none" class="ios-btn"><img id="ios-btn" src="resource/images/iosDownBtn.svg" alt="Apple App" ></a>
                     </div>
                 </div>
                 </div>
@@ -313,36 +315,36 @@
         <!-- 푸터 -->
         <footer id="footer">
             <div class="inner">
-                <div id="logo">
-                    <img src="resource/images/logoOriginal.svg" alt="Logo">
-                </div>
-                
-                <div class="footer">
-                    <div class="comapany-info">
+                <div class="company-info">
+                    <h1 class="footer-logo">
+                        <img src="resource/images/logo-footer.svg">
+                    </h1>    
+                    <div class="info">
                         <ul>
-                            <li><span><b>대표</b></span>이엘리샤</li>
-                            <li><span><b>사업자등록번호</b></span>123-45-67890</li>
-                            <li><span><b>대표번호</b></span>1234-5678</li>
+                            <li><span>대표</span>&nbsp;&nbsp;이엘리샤</li>
+                            <li><span>사업자등록번호</span>&nbsp;&nbsp;123-45-67890</li>
+                            <li><span>대표번호</span>&nbsp;&nbsp;1234-5678</li>
                             <li><address>서울특별시 서초구 서초동 강남대로53길 8</address></li>
                         </ul>
                     </div>
                     <div class="service-info">
                         <ul>
-                            <li><b><a href="#none">문의하기</a></b></li>
-                            <li><b><a href="#none">광고 및 제휴 문의</a></b></li>
-                            <li><b><a href="#none">개인정보취급방침</a></b></li>
-                            <li><b><a href="#none">리뷰 가이드</a></b></li>
-                            <li><b><a href="#none">이용약관</a></b></li>
+                            <li><a href="#none">문의하기</a></li>
+                            <li><a href="#none">광고 및 제휴 문의</a></li>
+                            <li><a href="#none">개인정보취급방침</a></li>
+                            <li><a href="#none">리뷰 가이드</a></li>
+                            <li><a href="#none">이용약관</a></li>
                         </ul>
-                        <p>© TODOCTORPET. ALL RIGHTS RESERVED</p>
                     </div>
-                    <div class="sns-link">
-                        <a href="#none"><img src="resource/images/instagram.png" alt="Instagram" ></a>
-                        <a href="#none"><img src="resource/images/facebook.png" alt="Facebook" ></a>
-                        <a href="#none"><img src="resource/images/twitter.png" alt="Twitter" ></a>
-                    </div>
+                    <div class="footer-end">
+                        <ul>
+                            <li class="copyright">© TODOCTORPET. ALL RIGHTS RESERVED</li>
+                            <li><a href="#none"><img src="resource/images/instagram.png" alt="Instagram" ></a></li>
+                            <li><a href="#none"><img src="resource/images/facebook.png" alt="Facebook" ></a></li>
+                            <li><a href="#none"><img src="resource/images/twitter.png" alt="Twitter" ></a></li>
+                        </ul>
                 </div>
             </div>
         </footer>
     </body>
-</html>
+</html>                                                                                 
