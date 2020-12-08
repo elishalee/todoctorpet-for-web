@@ -104,17 +104,27 @@
             <section id="content">
                 <!-- 메인 -->
                 <div id="main-content">
-                    <div id="swiper-container">
+                    <!-- 애니메이션 원형 -->
+                        <div class="animated-moving-circle">
+                            <ul class="top-circle">
+                                <li id="circle1"><div></div></li>
+                                <li id="circle2"><div></div></li>
+                            </ul>
+                            <ul class="bottom-circle">
+                                <li id="circle3"><div></div></li>
+                                <li id="circle4"><div></div></li>
+                            </ul>
+                        </div>
+                    <div class="swiper-container first">
                             <div class="swiper-wrapper">
                             <!-- 첫 번쨰 캐러셀 배너 -->
                                 <div class="swiper-slide">
                                     <div class="inner">
                                         <p>반려동물을 위한 최고의 소셜 플랫폼</p>
                                         <h3>언제 어디서나<br>누구에게나<br>우리 아이들에 대해 공유해요</h3>
-                                        <div class="animated moving circle"></div>
                                     </div>
                                 </div>
-                                <!-- 두 번쨰 캐러셀 배너 -->
+                                <!-- 두 쨰 캐러셀 배너 -->
                                 <div class="swiper-slide">
                                     <div class="inner">
                                         <p>반려동물을 위한 최고의 소셜 플랫폼</p>
@@ -130,7 +140,10 @@
                                     </div>
                                 </div>
                             </div>
-                        <div class="swiper-pagination"></div>
+                            <!-- ease : specifies a transition effect with a slow start, then fast, then end slowly (this is default) -->
+                        <div class="swiper-scrollbar">
+                            <div class="swiper-scrollbar-drag" style=" background: #87D5D6; transform: translated(0px, 0px, 0px); transition: all 0ms ease 0s; width: 0px"></div>
+                        </div>
                     </div>
                 </div>
 
@@ -214,22 +227,76 @@
 
                 <!-- 리뷰.... 드디어!!! 이제 곧 새벽 5시다 ㅠㅠㅠㅠ -->
                 <div id="review-content">
-                <div class="inner">
-                    <h4>과장 홍보 없는 진실된 리뷰</h4>
-                    <p>
-                        업계 최대 규모의 700만 건의 실 사용자 리뷰는<br>
-                        우리 아이에게 꼭 필요한 정보가 됩니다!
-                    </p>
-                    <!-- 스마트폰 모양 디비전 -->
-                    <div class=" ">
-                        <div class=" ">
-                            <div class=" "></div>
-                            <div class=" "></div>
+                    <div class="inner">
+                        <h4>과장 홍보 없는 진실된 리뷰</h4>
+                        <p>
+                            업계 최대 규모의 700만 건의 실 사용자 리뷰는<br>
+                            우리 아이에게 꼭 필요한 정보가 됩니다!
+                        </p>
+                        <!-- 스마트폰 모양 디비전 -->
+                        <div class="phone-wrapper">
+                            <div class="phone-content">
+                                <div class="inner-phone">
+                                    <!-- 로고 이미지 -->
+                                    <img src="resource/images/logoOriginal.svg">
+                                    <!-- 검색창 디비전 -->
+                                    <ul class="search-bar">
+                                        <li><div></div></li>
+                                        <li><div></div></li>
+                                    </ul>
+
+                                    <div class="swiper-container second">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide second">
+                                                <div class="first-feed">
+                                                    <div class="feed-circle-div">
+                                                        <div class="feed-circle"></div>
+                                                    </div>
+                                                    <div class="first-write-div">
+                                                        <ul class="feed-write">
+                                                            <li><div></div></li>
+                                                            <li><div></div></li>
+                                                            <li><div></div></li>
+                                                            <li><div></div></li>
+                                                            <li><div></div></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide second">
+                                                <div class="second-feed">
+                                                    <div class="feed-circle-div">
+                                                        <div class="feed-circle"></div>
+                                                    </div>
+                                                        <ul class="feed-write">
+                                                        <li><div></div></li>
+                                                        <li><div></div></li>
+                                                        <li><div></div></li>
+                                                        <li><div></div></li>
+                                                        <li><div></div></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide second">
+                                                <div class="third-feed">
+                                                    <div class="feed-circle-div">
+                                                        <div class="feed-circle"></div>
+                                                    </div>
+                                                        <ul class="feed-write">
+                                                        <li><div></div></li>
+                                                        <li><div></div></li>
+                                                        <li><div></div></li>
+                                                        <li><div></div></li>
+                                                        <li><div></div></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class=" "></div>
-                        <div class=" "></div>
                     </div>
-                </div>
                 </div>
                 
                 <!-- 통계 -->
@@ -251,6 +318,15 @@
                             <div>
                                 <p>등록된 병원 리뷰</p>
                                 <p class="bigger-letter">7,937,854</p>
+                            </div>
+                        </div>
+                        <div class="pingpong-content">
+                            <div class="pingpong-animation">
+                                <div class="animation-bar animate-elements"></div>
+                                <div class="animation-bar animate-elements"></div>
+                                <div class="animation-bar animate-elements"></div>
+                                <div class="animation-bar animate-elements"></div>
+                                <div class="animation-ball animate-elements"></div>
                             </div>
                         </div>
                     </div>
@@ -300,12 +376,12 @@
                 <div id="scroll-banner">
                     <div class="inner">
                         <ul>
-                            <li><img src="resource/images/sliderImage1.jpg" alt="Slider Image1" style="width: 260px; height: 260px"></li>
-                            <li><img src="resource/images/sliderImage2.jpg" alt="Slider Image2" style="width: 260px; height: 260px"></li>
-                            <li><img src="resource/images/sliderImage3.jpg" alt="Slider Image3" style="width: 260px; height: 260px"></li>
-                            <li><img src="resource/images/sliderImage4.jpg" alt="Slider Image4" style="width: 260px; height: 260px"></li>
-                            <li><img src="resource/images/sliderImage5.jpg" alt="Slider Image5" style="width: 260px; height: 260px"></li>
-                            <li><img src="resource/images/sliderImage6.jpg" alt="Slider Image6" style="width: 260px; height: 260px"></li>
+                            <li><img src="resource/images/sliderImage1.png" alt="Slider Image1" style="width: 260px; height: 260px"></li>
+                            <li><img src="resource/images/sliderImage2.png" alt="Slider Image2" style="width: 260px; height: 260px"></li>
+                            <li><img src="resource/images/sliderImage3.png" alt="Slider Image3" style="width: 260px; height: 260px"></li>
+                            <li><img src="resource/images/sliderImage4.png" alt="Slider Image4" style="width: 260px; height: 260px"></li>
+                            <li><img src="resource/images/sliderImage5.png" alt="Slider Image5" style="width: 260px; height: 260px"></li>
+                            <li><img src="resource/images/sliderImage6.png" alt="Slider Image6" style="width: 260px; height: 260px"></li>
                         </ul>
                     </div>
                 </div>
