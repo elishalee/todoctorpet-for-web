@@ -27,11 +27,12 @@ $(function(){
     // 리뷰 컨텐츠 캐러셀
     var swiper = new Swiper('.second', {
         scrollbar: {
-            direction: 'vertical',
-            clickable: true,
             loop: true,
-            autoplay: 5000,
-            
+            slidesPerView:2 ,
+            autoplay:{
+                delay: 2500,
+                disableOnInteraction: false
+            }
         },
     });
 });

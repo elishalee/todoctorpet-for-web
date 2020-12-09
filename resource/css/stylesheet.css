@@ -10,6 +10,7 @@ body{
     background-image: url('../images/responsiveBanner.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 /* 헤더 */
@@ -87,10 +88,8 @@ body{
 
 /* 메인 컨텐츠(캐러셀) */
 .swiper-container first{
-    padding-top: 100px;
-    padding-bottom: 102px;
     width: 100%;
-    height: 287px;
+    height: 1000px;
 }
 .swiper-container first > .swiper-scrollbar{
     position: absolute;   
@@ -99,17 +98,24 @@ body{
     height: 5px;
     width: 231px;
 }
+.swiper-slide{
+    width: 100%;
+    left: 0;
+    right: 0;
+    height: 1000px;
+}
 .swiper-scrollbar{
+    margin-bottom: 200px;
+    width: 50%;
     transition: all 400ms ease 0s;
     border-radius: 5px;
     background: rgba(255,255,255,0.50);
 }
 #main-content{
-    margin-top: 110px;
-    padding: 100px;
+    top: 0px;
     width: 100%;
-    height: 600px;
-    background-color: #C2E8DD;
+    height: 1000px;
+    position: relative;
 }
 #main-content .inner h3{
     line-height: 60px;
@@ -125,6 +131,7 @@ body{
     font-weight: normal;
     color: #ffffff;
     text-align: center;
+    margin-top: 397px;
     text-shadow: 0px 0px 5px #B9B9B9;
 }
 .animated-moving-circle{
@@ -384,9 +391,20 @@ body{
     width: 270px;
     height: 530px;
 }
-.swiper-slide second div{
+.swiper-slide second{
     height: 100%;
-    overflow-y: scroll;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
 }
 .first-feed{
     width: 222px;
