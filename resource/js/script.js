@@ -19,6 +19,7 @@ $(function(){
     var swiper = new Swiper('.first', {
         scrollbar: {
             el: '.swiper-scrollbar',
+            loop: true,
             hide: false,
             dragSize: 77,
             centeredSlides: true
@@ -26,13 +27,11 @@ $(function(){
     });
     // 리뷰 컨텐츠 캐러셀
     var swiper = new Swiper('.second', {
-        scrollbar: {
-            loop: true,
-            slidesPerView:2 ,
-            autoplay:{
-                delay: 2500,
-                disableOnInteraction: false
-            }
+        direction: 'vertical',
+        loop: true,
+        autoplay:{
+            delay: 5000,
+            disableOnInteraction: false
         },
     });
 });

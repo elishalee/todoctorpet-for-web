@@ -92,21 +92,22 @@ body{
     height: 1000px;
 }
 .swiper-container first > .swiper-scrollbar{
-    position: absolute;   
+    position: relative;
+    
     bottom: 3px;
     z-index: 2;
     height: 5px;
     width: 231px;
 }
 .swiper-slide{
+    position: relative;
     width: 100%;
-    left: 0;
-    right: 0;
     height: 1000px;
 }
 .swiper-scrollbar{
-    margin-bottom: 200px;
-    width: 50%;
+    /* auto는 margin만 먹음 */
+    margin: 0 auto 200px;
+    width: 231px!important;
     transition: all 400ms ease 0s;
     border-radius: 5px;
     background: rgba(255,255,255,0.50);
@@ -116,6 +117,11 @@ body{
     width: 100%;
     height: 1000px;
     position: relative;
+    background-color: #ffffff;
+    text-align: center;
+}
+.inner{
+    display: inline-block;
 }
 #main-content .inner h3{
     line-height: 60px;
@@ -231,21 +237,22 @@ body{
 /* 개요 콘텐츠 */
 #introduction-content{
     position: relative;
-    margin-top: 0px;
-    padding: 100px;
     width: 100%;
     z-index: 2;
-    height: 973 px;
+    height: 975 px;
     background-color: #ffffff;
-    margin: 0px auto;
+    text-align: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    box-sizing: content-box;;
 }
 .inner .animal{
     text-align: center;
 }
 .inner .animal li {
     width: 200px;
-    display: inline-block;
     margin: -24px;
+    display: inline-block;
 }
 #introduction-content .inner h4 {
     margin-top: 127px;
@@ -257,37 +264,51 @@ body{
     margin-top: 49px;
     font-size: 25px;
     text-align: center;
+    line-height: 40px;
 }
 
 /* 반응형 배너 */
 .responsive-banner-start{
-    margin-top: 0px;
-    padding: 100px;
+    position: relative;
     width: 100%;
-    height: 523 px;
+    height: 300 px;
+    box-sizing: content-box;
+    padding-top: 300px;
 }
 .responsive-banner-end{
-    margin-top: 0px;
-    padding: 100px;
+    position: relative;
     width: 100%;
-    height: 523 px;
+    height: 300 px;
+    box-sizing: content-box;
+    padding-top: 300px;
 }
 
 /* 기능 콘텐츠 */
 #feature-content{
-    margin-top: 0px;
-    padding: 100px;
+    position: relative;
     width: 100%;
-    height: 973 px;
+    height: 450 px;
+    padding-top: 200px;
+    padding-bottom: 200px;
     background-color: #ffffff;
+    text-align: center;
+}
+.inner {
+    display: inline-block;
 }
 #feature-content .feature{
-    padding-top: 200px;
+    margin-top: 65px;
     text-align: center;
+}
+.feature li img{
+    margin-top: 50px;   
+}
+.feature li p{
+    margin-top: 20px !important;  
 }
 .inner .feature li {
     width: 200px;
-    margin-left: 50px;
+    margin-left: 20px;
     display: inline-block;
 }
 .inner .feature li:first-child{
@@ -311,18 +332,21 @@ body{
     margin-top: 49px;
     font-size: 25px;
     text-align: center;
+    line-height: 40px;
 }
-
-
-
 
 /* 리뷰 콘텐츠 */
 #review-content{
-    margin-top: 0px;
-    padding: 100px;
+    position: relative;
     width: 100%;
-    height: 973 px;
+    height: 600px;
     background-color: #87D5D6;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    text-align: center;
+}
+.inner{
+    display: inline-block;
 }
 #review-content .inner h4 {
     font-weight: bolder;
@@ -335,24 +359,74 @@ body{
     margin-top: 49px;
     font-size: 25px;
     text-align: center;
+    line-height: 40px;
 }
-.phone-wrapper{
+.review-wrapper{
     text-align: center;
 }
+.right-review-div{
+    margin-right: 250px;
+    display: inline-block;
+}
+.left-review-div{
+    margin-left: 250px;
+    display: inline-block;
+}
+.review-div{
+    width: 340px;
+    height: 109px;
+    background-color: #FFFFFF;
+    border-radius: 169px;
+    box-shadow: 0px 6px 6px #837a7a;
+}
+.right-review-div div:nth-child(n+2){
+    margin-top: 18px;
+}
+.left-review-div div:nth-child(n+2){
+    margin-top: 18px;
+}
+.profile-circle{
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    float: left;
+    margin-left: 21px;
+    margin-top: 25px;
+    margin-right: 17px;
+}
+.profile-all-text{
+    text-align: left;
+    padding-top: 20px;
+    width: 300px;
+}
+.review-div .profile-bold-text{
+    font-size: 15px;
+    font-weight: bold;
+    color: #252729;
+}
+.review-div p{
+    margin-top: 9px;
+    font-size: 15px;
+    color: #252729;
+}
+.phone-wrapper{
+    position: absolute;
+    top: 50%;
+    left:50%;
+    z-index: 10;
+    margin-top: 180px;
+    margin-bottom: 200px;
+    transform: translate(-50%, -50%);
+}
 .phone-content{
-    position: relative;
-    margin-top: 40px;
-    z-index: 1;
     width: 310px;
     height: 576px;
     border-radius: 50px;
     background-color: #FFFFFF;
     border: 0.5px solid  #707070;
     box-shadow: 0px 6px 6px #A0A0A0;
-    display: inline-block;
 }
 .inner-phone{
-    position: absolute;
     width: 270px;
     height: 530px;
     margin-left: 20px;
@@ -392,19 +466,11 @@ body{
     height: 530px;
 }
 .swiper-slide second{
-    height: 100%;
+    height: 530px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    -webkit-justify-content: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    -webkit-align-items: center;
-    align-items: center;
 }
 .first-feed{
     width: 222px;
@@ -485,19 +551,20 @@ body{
     margin-top: 5px;
 }
 
-
-
 /* 통계 콘텐츠 */
 #statistic-content{
-    margin-top: 0px;
-    padding: 100px;
+    position: relative;
     width: 100%;
-    height: 973 px;
+    height: 450px;
     background-color: #B7F8DB;
+    padding-top: 200px;
+    padding-bottom: 200px;
     text-align: center;
 }
-#statistic-content .inner .circle{
+.inner{
     display: inline-block;
+}
+#statistic-content .inner .circle{
     margin-top: 55px;
 }
 #statistic-content .inner .circle div{
@@ -513,13 +580,13 @@ body{
     font-weight: bolder;
     color: #4B6E64;
     font-size: 35px;
-    text-align: center;
+
 }
 #statistic-content .inner p {
     color: #252729;
     margin-top: 49px;
     font-size: 25px;
-    text-align: center;
+    line-height: 40px;
 }
 #statistic-content .circle p{
     color: #ffffff;
@@ -534,6 +601,7 @@ body{
 }
 .pingpong-content div{
     float: left;
+    text-align: center;
 }
 .pingpong-animation {
     width: 100%;
@@ -645,14 +713,15 @@ body{
 }
 
 /* 펫 컬럼 콘텐츠 */
-#column-content .inner{
-    margin-top: 0px;
-    padding: 100px;
+#column-content{
+    position: relative;
+    padding-top: 250px;
+    padding-bottom: 150px;
     width: 100%;
-    height: 973 px;
+    height: 450px;
     background-image: url('../images/column-bg-image.svg');
     background-color: #FFFFFF;
-    background-size: 100% auto;
+    background-size: cover;
     background-repeat: no-repeat;
     text-align: center;
 }
@@ -667,17 +736,39 @@ body{
     margin-top: 49px;
     font-size: 25px;
     text-align: center;
+    line-height: 40px;
 }
 
 /* 다운로드 콘텐츠 */
 #download-content{
-    margin-top: 0px;
-    padding: 100px;
+    position: relative;
+    padding-top: 200px;
+    padding-bottom: 200px;
     width: 100%;
-    height: 973 px;
+    height: 450px;
     background-color: #8BD1A0;
     text-align: center;
 }
+.confetti{
+    animation-duration: 10s;
+    animation-name: movement;
+    animation-iteration-count: infinite;
+}
+@keyframes movement {
+    10% {
+            transform: rotate(20deg);
+    }
+    30% {
+            transform: rotate(-20deg);
+    }
+    60% {
+            transform: rotate(20deg);
+    }
+    90% {
+            transform: rotate(-20deg);
+    }
+}
+
 #download-content .download-btn {
     margin-top: 100px;
 }
@@ -714,8 +805,6 @@ body{
 /* 반응형 스크롤 배너 */
 #scroll-banner{
     padding-top: 123px;
-    padding-left: 100px;
-    padding-right: 100px;
     width: 100%;
     height: 289 px;
     text-align: center;
@@ -728,8 +817,6 @@ body{
 /* 푸터 */
 footer{
     padding-top: 96px;
-    padding-left: 100px;
-    padding-right: 100px;
     width: 100%;
     background-color: #ffffff;
 }
@@ -737,9 +824,14 @@ footer .inner .footer-logo{
     display: inline-block;
     margin-top: 96px;
     margin-bottom: 42px;
+    margin-left: 10%;
+}
+.company-info{
+    width: 100%;
 }
 .info{
     margin-bottom: 27px;
+    margin-left: 10%;
 }
 .info li{
     display: inline-block;
@@ -756,6 +848,7 @@ footer .inner .footer-logo{
 }
 .service-info{
     margin-bottom: 59px;
+        margin-left: 10%;
 }
 .service-info li{
     display: inline-block;
@@ -779,6 +872,7 @@ footer .inner .footer-logo{
 }
 .footer-end{
     padding-bottom: 78px;
+    
 }
 .footer-end li{
     display: inline-block;
@@ -786,9 +880,10 @@ footer .inner .footer-logo{
 .footer-end li:nth-child(n+2){
     padding-left: 10px;
     padding-right: 10px;  
+    float: left;
 }
 .copyright{
-    padding-right: 900px;
+    margin-left: 10%;
 }
 
 
