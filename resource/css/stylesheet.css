@@ -242,8 +242,8 @@ body{
     height: 975 px;
     background-color: #ffffff;
     text-align: center;
-    padding-top: 200px;
-    padding-bottom: 200px;
+    padding-top: 100px;
+    padding-bottom: 100px;
     box-sizing: content-box;;
 }
 .inner .animal{
@@ -288,8 +288,8 @@ body{
     position: relative;
     width: 100%;
     height: 450 px;
-    padding-top: 200px;
-    padding-bottom: 200px;
+    padding-top: 100px;
+    padding-bottom: 100px;
     background-color: #ffffff;
     text-align: center;
 }
@@ -341,7 +341,7 @@ body{
     width: 100%;
     height: 600px;
     background-color: #87D5D6;
-    padding-top: 200px;
+    padding-top: 100px;
     padding-bottom: 200px;
     text-align: center;
 }
@@ -414,7 +414,7 @@ body{
     top: 50%;
     left:50%;
     z-index: 10;
-    margin-top: 180px;
+    margin-top: 140px;
     margin-bottom: 200px;
     transform: translate(-50%, -50%);
 }
@@ -557,7 +557,7 @@ body{
     width: 100%;
     height: 450px;
     background-color: #B7F8DB;
-    padding-top: 200px;
+    padding-top: 100px;
     padding-bottom: 200px;
     text-align: center;
 }
@@ -565,7 +565,7 @@ body{
     display: inline-block;
 }
 #statistic-content .inner .circle{
-    margin-top: 55px;
+    margin-top: 30px;
 }
 #statistic-content .inner .circle div{
     border-radius: 50%;
@@ -591,7 +591,7 @@ body{
 #statistic-content .circle p{
     color: #ffffff;
     font-size: 14px;
-    padding-top: 30px;
+    margin-top: 70px;
 }
 #statistic-content .circle .bigger-letter{
     color: #ffffff;
@@ -602,6 +602,7 @@ body{
 .pingpong-content div{
     float: left;
     text-align: center;
+    transform: translate(15%, 1%);
 }
 .pingpong-animation {
     width: 100%;
@@ -609,7 +610,7 @@ body{
 }
 .animation-bar {
     position: relative;
-    width: 123px;
+    width: 100px;
     margin-left: 53px;
     transform-origin: center bottom;
     background: linear-gradient(to bottom, #B7F8DB, #50A7C2);
@@ -618,7 +619,7 @@ body{
     position:absolute;
 	top:0;
 	left:0;
-    width: 123px;
+    width: 100px;
     height: 45px;
     background:linear-gradient(to bottom, #B7F8DB, #50A7C2);
 	border-radius:60px/25px;
@@ -627,7 +628,7 @@ body{
 .animation-bar:nth-child(1) {
     height: 194px;
     margin-left: 25px;
-    margin-bottom: ;
+    margin-bottom: 0px;
     animation: scaling-bar-1 4s infinite;
 }
 .animation-bar:nth-child(2) {
@@ -715,8 +716,8 @@ body{
 /* 펫 컬럼 콘텐츠 */
 #column-content{
     position: relative;
-    padding-top: 250px;
-    padding-bottom: 150px;
+    padding-top: 100px;
+    padding-bottom: 200px;
     width: 100%;
     height: 450px;
     background-image: url('../images/column-bg-image.svg');
@@ -724,6 +725,11 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     text-align: center;
+}
+.column-text{
+    position: absolute;
+    margin-top: 130px;
+    margin-left: 40px;
 }
 #column-content .inner h4 {
     font-weight: bolder;
@@ -742,7 +748,7 @@ body{
 /* 다운로드 콘텐츠 */
 #download-content{
     position: relative;
-    padding-top: 200px;
+    padding-top: 100px;
     padding-bottom: 200px;
     width: 100%;
     height: 450px;
@@ -750,22 +756,25 @@ body{
     text-align: center;
 }
 .confetti{
-    animation-duration: 10s;
+    animation-duration: 5s;
     animation-name: movement;
     animation-iteration-count: infinite;
 }
 @keyframes movement {
     10% {
-            transform: rotate(20deg);
+            transform: rotate(10deg);
     }
     30% {
-            transform: rotate(-20deg);
+            transform: rotate(-10deg);
+    }
+    45% {
+            transform:  rotate(0deg);
     }
     60% {
-            transform: rotate(20deg);
+            transform: rotate(10deg);
     }
     90% {
-            transform: rotate(-20deg);
+            transform: rotate(-10deg);
     }
 }
 
@@ -803,22 +812,66 @@ body{
 }
 
 /* 반응형 스크롤 배너 */
-#scroll-banner{
-    padding-top: 123px;
-    width: 100%;
-    height: 289 px;
+.landing-wrapper {
     text-align: center;
+    width: 99.9%;
+    height: 200px;
+    /* margin:20px auto; */
+    padding-top: 70px;
+    overflow:hidden;
+    cursor:pointer;
     background-color: #FFFFFF;
 }
-#scroll-banner .inner li{
+
+.landing-inner-content {
     display: inline-block;
+    background: #FFF;
+    width: 3000px;
+    height: 0px;
 }
+
+.box {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    /* margin: 20px 0px 0 0; */
+    float: left;
+    overflow:hidden;
+}
+
+.box:first-of-type {
+    margin-left:0px;
+}
+
+.box:last-of-type {
+    margin-right:0px;
+}
+
+.box-content {
+    /*margin-left: auto;
+    margin-right: auto;*/
+    top:0;
+    left:0;
+    z-index: 999;
+}
+
+.box-content img {
+        width: 100%;
+}
+
+
+
+
 
 /* 푸터 */
 footer{
-    padding-top: 96px;
+    padding-top: 50px;
     width: 100%;
     background-color: #ffffff;
+    text-align:center;
+}
+#footer .inner{
+
 }
 footer .inner .footer-logo{
     display: inline-block;
