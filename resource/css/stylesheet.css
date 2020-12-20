@@ -93,8 +93,8 @@ body{
     text-align: center;
 }
 .swiper-container first > .swiper-scrollbar{
-    position: relative;
-    left: 50%;
+    display: inline-block;
+    margin-left: 0px;
     z-index: 2;
     height: 5px;
     width: 231px;
@@ -107,8 +107,8 @@ body{
 .swiper-scrollbar{
     /* auto는 margin만 먹음 */
     display: inline-block;
-    margin-left: 1200px;
-    margin-bottom: 10%;
+    margin-left: 599px;
+    margin-bottom: 250px;
     width: 231px!important;
     transition: all 400ms ease 0s;
     border-radius: 5px;
@@ -365,6 +365,7 @@ body{
 }
 .review-wrapper{
     text-align: center;
+    margin-top: 50px;
 }
 .right-review-div{
     margin-right: 250px;
@@ -385,7 +386,7 @@ body{
     margin-top: 18px;
 }
 .left-review-div div:nth-child(n+2){
-    margin-top: 18px;
+    margin-top: 14px;
 }
 .profile-circle{
     width: 55px;
@@ -464,8 +465,9 @@ body{
     background-color: #C2E8DD;
 }
 .swiper-container.second{
+    margin-top: 20px;
     width: 270px;
-    height: 530px;
+    height: 350px;
     overflow: hidden;
 }
 .swiper-slide.second{
@@ -604,9 +606,8 @@ body{
     font-weight: bolder;
 }
 .pingpong-content div{
-    float: left;
+    display: inline-block;
     text-align: center;
-    transform: translate(15%, 1%);
 }
 .pingpong-animation {
     width: 100%;
@@ -629,27 +630,26 @@ body{
 	content:"";
 }
 .animation-bar:nth-child(1) {
-    height: 194px;
+    height: 190px;
     margin-left: 25px;
-    margin-bottom: 0px;
     animation: scaling-bar-1 4s infinite;
 }
 .animation-bar:nth-child(2) {
-    height: 263px;
+    height: 230px;
     animation: scaling-bar-2 4s infinite;
 }
 .animation-bar:nth-child(3) {
-    height: 315px;
+    height: 270px;
 }
 .animation-bar:nth-child(4) {
-    height: 387px;
+    height: 310px;
     animation: scaling-bar-4 4s infinite;
 }
 .animation-ball {
     position: relative;
     border-radius: 50%;
-    bottom: 12px;
-    right: 70px;
+    bottom: 160px;
+    right: 545px;
     width: 43px;
     height: 43px;
     animation: animation-ball 4s infinite;
@@ -661,15 +661,15 @@ body{
         transform: translate(0, 0);
     }
     5% {
-        transform: translate(7.5px, -16px);
+        transform: translate(10px, -50px);
     }
     10% {
-        transform: translate(15px, -12px);
+        transform: translate(20px, -80px);
     }
     17% {
-        transform: translate(22.5px, -28px);
+        transform: translate(50px, -100px);
     }
-    20% {
+    /* 20% {
         transform: translate(30px, -24px);
     }
     27% {
@@ -713,7 +713,7 @@ body{
     }
     100% {
         transform: translate(0, 0);
-    }
+    } */
 }
 
 /* 펫 컬럼 콘텐츠 */
@@ -896,11 +896,12 @@ body{
     display: inline-block;
     padding-right: 40px;
     color: #252729;
-    border-right: 1px solid #87D5D6;
+
 }
 .info li:nth-child(n+2){
     padding-left: 40px;
     padding-right: 40px;
+    border-left: 1px solid #87D5D6;
 }
 .info span{
     font-weight: bold;
@@ -914,11 +915,11 @@ body{
     display: inline-block;
     padding-right: 40px;
     font-weight: bold;
-    border-right: 1px solid #87D5D6;
 }
 .service-info li:nth-child(n+2){
     padding-left: 40px;
     padding-right: 40px;
+    border-left: 1px solid #87D5D6;
 }
 .service-info ul li a{
     color: #252729;
@@ -936,13 +937,13 @@ body{
 }
 .footer-end li{
     display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 5px;
 }
-.footer-end li:nth-child(n+2){
-    padding-left: 10px;
-    padding-right: 10px;
-}
+
 .copyright{
-    margin-top: 20px;
+    margin-top: 5px;
 }
 
 
