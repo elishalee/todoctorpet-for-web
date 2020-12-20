@@ -59,6 +59,7 @@ $(function(){
     // 리뷰 컨텐츠 캐러셀
     var swiper = new Swiper('.second', {
         direction: 'vertical',
+        height: 170,
         loop: true,
         autoplay:{
             delay: 5000,
