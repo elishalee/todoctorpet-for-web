@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="ko">
     <head>
@@ -46,494 +45,463 @@
         <script src="resource/js/script.js"></script>
     </head>
     <body>
-            <!-- 상단 navigation bar(menu) -->
-            <header id="header">
-                <div class="navi">
-                    <a class="logo" href="#none"><img src="resource/images/logoOriginal.svg" alt="Logo" ></a>
-                    <ul class="menuLeft">
-                        <li><a href="#none">About Us</a></li>
-                        <li><a href="#none">Event</a></li>
-                        <li><a href="#none">Recruit</a></li>
-                        <li><a href="#none">Contact</a></li>
-                    </ul>
-                    <ul class="menuRight">
-                        <li><a href="#none">Sign In</a></li>
-                        <li><a href="#none">Sign Up</a></li>
-                    </ul>
-                </div>
-            </header>
+        <!-- 상단 navigation bar(menu) -->
+        <header id="header">
+            <div class="navi">
+                <a class="logo" href="index.html"><img src="resource/images/logoOriginal.svg" alt="Logo" ></a>
+                <ul class="menuLeft">
+                    <li><a href="about-us.html">About Us</a></li>
+                    <li><a href="event.html">Event</a></li>
+                    <li><a href="recruit.html">Recruit</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <ul class="menuRight">
+                    <li><a href="sign-in.html">Sign In</a></li>
+                    <li><a href="sign-up.html">Sign Up</a></li>
+                </ul>
+            </div>
+        </header>
 
-            <!-- 오른쪽 인디케이터 -->
-            <ul id="indicator">
-                    <div class="inner-indicator">
-                        <li class="main">
-                            <a href="#main-content">
-                                <span>메인</span>
-                            </a> 
-                        </li>
-                        <li class="introduction">
-                            <a href="#introduction-content">
-                                <span>개요</span>
-                            </a> 
-                        </li>
-                        <li class="feature">
-                            <a href="#feature-content">
-                                <span>기능</span>
-                            </a> 
-                        </li>
-                        <li class="review">
-                            <a href="#review-content">
-                                <span>리뷰</span>
-                            </a> 
-                        </li>
-                        <li class="statistic">
-                            <a href="#statistic-content">
-                                <span>통계</span>
-                            </a> 
-                        </li>
-                        <li class="column">
-                            <a href="#column-content">
-                                <span>펫 컬럼</span>
-                            </a> 
-                        </li>
-                        <li class="download">
-                            <a href="#download-content">
-                                <span>다운로드</span>
-                            </a> 
-                        </li>
+        <!-- 오른쪽 인디케이터 -->
+        <ul id="indicator">
+            <div class="inner-indicator">
+                <li class="main">
+                    <a href="#main-content">
+                        <span>메인</span>
+                    </a> 
+                </li>
+                <li class="introduction">
+                    <a href="#introduction-content">
+                        <span>개요</span>
+                    </a> 
+                </li>
+                <li class="feature">
+                    <a href="#feature-content">
+                        <span>기능</span>
+                    </a> 
+                </li>
+                <li class="review">
+                    <a href="#review-content">
+                        <span>리뷰</span>
+                    </a> 
+                </li>
+                <li class="statistic">
+                    <a href="#statistic-content">
+                        <span>통계</span>
+                    </a> 
+                </li>
+                <li class="column">
+                    <a href="#column-content">
+                        <span>펫 컬럼</span>
+                    </a> 
+                </li>
+                <li class="download">
+                    <a href="#download-content">
+                        <span>다운로드</span>
+                    </a> 
+                </li>
+            </div>
+        </ul>
+
+        <section id="content">
+            <!-- 메인 -->
+            <div id="main-content">
+                <!-- 애니메이션 원형 -->
+                <div class="swiper-container first">
+                    <div class="swiper-wrapper">
+                        <!-- 첫 번쨰 캐러셀 배너 -->
+                        <div class="swiper-slide" style="background-color: #C2E8DD;">
+                            <div class="inner" style="position: relative; z-index: 10;">
+                                <p>반려동물을 위한 최고의 소셜 플랫폼</p>
+                                <h3>언제 어디서나<br>누구에게나<br>우리 아이들에 대해 공유해요</h3>
+                            </div>
+                        </div>
+                        <!-- 두 번쨰 캐러셀 배너 -->
+                        <div class="swiper-slide" style="background-image: url(resource/images/swiper-slide-image2.svg); background-repeat: no-repeat; background-size: cover; ">
+                            <div class="inner">
+                                <p>반려동물을 위한 최고의 소셜 플랫폼</p>
+                                <h3>언제 어디서나<br>누구에게나<br>우리 아이들에 대해 공유해요</h3>
+                                <!-- <img src="resource/images/main2.png"> -->
+                            </div>
+                        </div>
+                        <!-- 세 번쨰 캐러셀 배너 -->
+                        <div class="swiper-slide" style="background-image: url(resource/images/swiper-slide-image3.svg); background-repeat: no-repeat; background-size: cover;">
+                            <div class="inner">
+                                <p>반려동물을 위한 최고의 소셜 플랫폼</p>
+                                <h3>언제 어디서나<br>누구에게나<br>우리 아이들에 대해 공유해요</h3>
+                            </div>
+                        </div>
                     </div>
-            </ul>
+                    <!-- ease : specifies a transition effect with a slow start, then fast, then end slowly (this is default) -->
+                    <div class="swiper-scrollbar">
+                        <div class="swiper-scrollbar-drag" style=" background: #87D5D6; transform: translated(0px, 0px, 0px); transition: all 0ms ease 0s; width: 0px"></div>
+                    </div>
+                </div>
+            </div>
 
-            <section id="content">
-                <!-- 메인 -->
-                <div id="main-content">
-                    <!-- 애니메이션 원형 -->
-                    <div class="swiper-container first">
+        <!-- 개요 -->
+        <div id="introduction-content">
+            <div class="inner">
+                <div class="animal-div">
+                    <div class="animation-animal"><img src="resource/images/animal1.svg" alt="Animal1" /></div>
+                    <div class="animation-animal"><img src="resource/images/animal2.svg" alt="Animal2" /></div>
+                    <div class="animation-animal"><img src="resource/images/animal3.svg" alt="Animal3" /></div>
+                    <div class="animation-animal"><img src="resource/images/animal4.svg" alt="Animal4" /></div>
+                </div>
+                <h4>우리는 반려동물에 대해 얼마나 알고 있을까?</h4>
+                <p>
+                    반려동물과 함께 해도 모르는 것은 여전히 많습니다.<br>
+                    공생은 정확한 정보를 앎으로부터 시작합니다.
+                </p>
+            </div>
+        </div>
+            
+        <!-- 반응형 배너 시작 -->
+        <div class="responsive-banner-start"></div>
+
+        <!-- 기능 -->
+        <div id="feature-content">
+            <div class="inner">
+                <h4>오로지 우리의 동물 친구들을 위한 플랫폼</h4>
+                <p>
+                    동물병원 가격 비교, 리뷰 및 동물 개체에 따른 질병 확인과<br>
+                    커뮤니티 등의 서비스 모두 한 플랫폼에서 이용하실 수 있습니다.
+                </p>
+                <ul class="feature">
+                    <li>
+                        <div>
+                            <!-- HTML의 img 태그에서 쓰이는 alt 속성은 그림이 렌더링되지
+                            못할 때 나타날 문자열을 지정하기 위한 값이다. 다음과 같은 이유로 사용 -->
+                            <figure>
+                                <img src="resource/images/review.svg" alt="Review">
+                                <p>동물병원 리뷰</p>
+                            </figure>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <figure>
+                                <img src="resource/images/hospital.svg" alt="Hospital">
+                                    <p>동물병원 정보</p>
+                            </figure>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <figure>
+                                <img src="resource/images/disease.svg" alt="Disease">
+                                <p>반려동물 질병</p>
+                            </figure>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <figure>
+                                <img src="resource/images/community.svg" alt="Community">
+                                <p>커뮤니티</p>
+                            </figure>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <figure>
+                                <img src="resource/images/column.svg" alt="Column">
+                                <p>펫 컬럼</p>
+                            </figure>
+                        </div>
+                    </li>                        
+                </ul>   
+            </div>
+        </div>
+
+        <!-- 리뷰.... 드디어!!! 이제 곧 새벽 5시다 ㅠㅠㅠㅠ -->
+        <div id="review-content">
+            <div class="inner">
+                <h4>과장 홍보 없는 진실된 리뷰</h4>
+                <p>
+                    업계 최대 규모의 700만 건의 실 사용자 리뷰는<br>
+                    우리 아이에게 꼭 필요한 정보가 됩니다!
+                </p>
+            </div>
+            <!-- 리뷰 디비전 -->
+            <div style="text-align: center;">
+                <div class="review-wrapper">
+                    <div class="right-review-div">
+                        <div class="review-div">
+                            <div class="profile-circle" style="background-image: url(resource/images/profile-circle-pic1.jpg); background-size: cover;"></div>
+                            <div class="profile-all-text">
+                                <p class="profile-bold-text">Mayumi</p>
+                                <p>최고의 병원이에요!</p>         
+                            </div>
+                        </div>
+                        <div class="review-div">
+                            <div class="profile-circle" style="background-image: url(resource/images/profile-circle-pic2.jpg); background-size: cover;"></div>
+                            <div class="profile-all-text">
+                                <p class="profile-bold-text">Aaliyah</p>
+                                <p>토닥펫 덕분에 좋은 정보를 얻었어요</p>
+                            </div>
+                        </div>
+                        <div class="review-div">
+                            <div class="profile-circle" style="background-image: url(resource/images/profile-circle-pic3.jpg); background-size: cover;"></div>
+                            <div class="profile-all-text">
+                                <p class="profile-bold-text">Evie</p>
+                                <p>의사 선생님과 간호사 선생님이 친절했어요</p>
+                            </div>
+                        </div>
+                        <div class="review-div">
+                            <div class="profile-circle" style="background-image: url(resource/images/profile-circle-pic4.jpg); background-size: cover;"></div>
+                            <div class="profile-all-text">
+                                <p class="profile-bold-text">Chloé</p>
+                                <p>가까운 병원을 찾았어요</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="left-review-div">
+                        <div class="review-div">
+                            <div class="profile-circle" style="background-image: url(resource/images/profile-circle-pic5.jpg); background-size: cover;"></div>
+                            <div class="profile-all-text">
+                                <p class="profile-bold-text">Juliana</p>
+                                <p>토닥펫을 통해 동물을 사랑하는 좋은 사람들을 많이 알게 되었어요</p>  
+                            </div>                      
+                        </div>
+                        <div class="review-div">
+                            <div class="profile-circle" style="background-image: url(resource/images/profile-circle-pic6.jpg); background-size: cover;"></div>
+                            <div class="profile-all-text">
+                                <p class="profile-bold-text">Jasmin</p>
+                                <p>앞으로가 기대되는 서비스에요</p>
+                            </div>
+                        </div>
+                        <div class="review-div">
+                            <div class="profile-circle" style="background-image: url(resource/images/profile-circle-pic7.jpg); background-size: cover;"></div>
+                            <div class="profile-all-text">
+                                <p class="profile-bold-text">Hailee</p>
+                                <p>동물병원 소셜 커머스 앱은 토닥펫이 최고죠!</p>
+                            </div>
+                        </div>
+                        <div class="review-div">
+                            <div class="profile-circle" style="background-image: url(resource/images/profile-circle-pic8.jpg); background-size: cover;"></div>
+                            <div class="profile-all-text">
+                                <p class="profile-bold-text">Fiona</p>
+                                <p>초보 집사인데 많은 것을 배워 갑니다</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 스마트폰 모양 디비전 -->
+            <div class="phone-wrapper">
+                <div class="phone-content">
+                    <div class="inner-phone">
+                        <!-- 로고 이미지 -->
+                        <img src="resource/images/logoOriginal.svg">
+                        <!-- 검색창 디비전 -->
+                        <ul class="search-bar">
+                            <li><div></div></li>
+                            <li><div></div></li>
+                        </ul>
+                        <div class="swiper-container second">
                             <div class="swiper-wrapper">
-                            <!-- 첫 번쨰 캐러셀 배너 -->
-                                <div class="swiper-slide" style="background-color: #C2E8DD;">
-                                    <div class="animated-moving-circle">
-                                        <ul class="top-circle">
-                                            <li id="circle1"><div></div></li>
-                                            <li id="circle2"><div></div></li>
+                                <div class="swiper-slide second">
+                                    <div class="first-feed">
+                                        <div class="feed-circle-div">
+                                            <div class="feed-circle"></div>
+                                        </div>
+                                        <div class="first-write-div">
+                                            <ul class="feed-write">
+                                                <li><div></div></li>
+                                                <li><div></div></li>
+                                                <li><div></div></li>
+                                                <li><div></div></li>
+                                                <li><div></div></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide second">
+                                    <div class="second-feed">
+                                        <div class="feed-circle-div">
+                                            <div class="feed-circle"></div>
+                                        </div>
+                                        <ul class="feed-write">
+                                            <li><div></div></li>
+                                            <li><div></div></li>
+                                            <li><div></div></li>
+                                            <li><div></div></li>
+                                            <li><div></div></li>
                                         </ul>
-                                        <ul class="bottom-circle">
-                                            <li id="circle3"><div></div></li>
-                                            <li id="circle4"><div></div></li>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide second">
+                                    <div class="third-feed">
+                                        <div class="feed-circle-div">
+                                            <div class="feed-circle"></div>
+                                        </div>
+                                        <ul class="feed-write">
+                                            <li><div></div></li>
+                                            <li><div></div></li>
+                                            <li><div></div></li>
+                                            <li><div></div></li>
+                                            <li><div></div></li>
                                         </ul>
                                     </div>
-                                    <div class="inner" style="position: relative; z-index: 10;">
-                                        <p>반려동물을 위한 최고의 소셜 플랫폼</p>
-                                        <h3>언제 어디서나<br>누구에게나<br>우리 아이들에 대해 공유해요</h3>
-                                    </div>
                                 </div>
-                                <!-- 두 번쨰 캐러셀 배너 -->
-                                <div class="swiper-slide" style="background-image: url(resource/images/swiper-slide-image2.svg); background-repeat: no-repeat; background-size: cover; ">
-                                    <div class="inner">
-                                        <p>반려동물을 위한 최고의 소셜 플랫폼</p>
-                                        <h3>언제 어디서나<br>누구에게나<br>우리 아이들에 대해 공유해요</h3>
-                                        <!-- <img src="resource/images/main2.png"> -->
-                                    </div>
-                                </div>
-                                <!-- 세 번쨰 캐러셀 배너 -->
-                                <div class="swiper-slide" style="background-image: url(resource/images/swiper-slide-image3.svg); background-repeat: no-repeat; background-size: cover;">
-                                    <div class="inner">
-                                        <p>반려동물을 위한 최고의 소셜 플랫폼</p>
-                                        <h3>언제 어디서나<br>누구에게나<br>우리 아이들에 대해 공유해요</h3>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- ease : specifies a transition effect with a slow start, then fast, then end slowly (this is default) -->
-                        <div class="swiper-scrollbar">
-                            <div class="swiper-scrollbar-drag" style=" background: #87D5D6; transform: translated(0px, 0px, 0px); transition: all 0ms ease 0s; width: 0px"></div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- 개요 -->
-                <div id="introduction-content">
-                    <div class="inner">
-                        <div class="animal">
-                            <ul>
-                                <li><img src="resource/images/animal1.svg" alt="Animal1" /></li>
-                                <li><img src="resource/images/animal2.svg" alt="Animal2" /></li>
-                                <li><img src="resource/images/animal3.svg" alt="Animal3" /></li>
-                                <li><img src="resource/images/animal4.svg" alt="Animal4" /></li>
-                            </ul>
-                        </div>
-                        <h4>우리는 반려동물에 대해 얼마나 알고 있을까?</h4>
-                        <p>
-                            반려동물과 함께 해도 모르는 것은 여전히 많습니다.<br>
-                            공생은 정확한 정보를 앎으로부터 시작합니다.
-                        </p>
-                    </div>
-                </div>
-            
-            <!-- 반응형 배너 시작 -->
-            <div class="responsive-banner-start">
-            </div>
-
-                <!-- 기능 -->
-                <div id="feature-content">
-                    <div class="inner">
-                        <h4>오로지 우리의 동물 친구들을 위한 플랫폼</h4>
-                        <p>
-                            동물병원 가격 비교, 리뷰 및 동물 개체에 따른 질병 확인과<br>
-                            커뮤니티 등의 서비스 모두 한 플랫폼에서 이용하실 수 있습니다.
-                        </p>
-                        <ul class="feature">
-                            <li>
-                                <div>
-                                    <!-- HTML의 img 태그에서 쓰이는 alt 속성은 그림이 렌더링되지
-                                        못할 때 나타날 문자열을 지정하기 위한 값이다. 다음과 같은 이유로 사용 -->
-                                    <figure>
-                                        <img src="resource/images/review.svg" alt="Review">
-                                        <p>동물병원 리뷰</p>
-                                    </figure>
-                                </div>
-                            </li>
-                            <li>
-                                <div>
-                                    <figure>
-                                        <img src="resource/images/hospital.svg" alt="Hospital">
-                                        <p>동물병원 정보</p>
-                                    </figure>
-                                </div>
-                            </li>
-                            <li>
-                                <div>
-                                    <figure>
-                                        <img src="resource/images/disease.svg" alt="Disease">
-                                        <p>반려동물 질병</p>
-                                    </figure>
-                                </div>
-                            </li>
-                            <li>
-                                <div>
-                                    <figure>
-                                        <img src="resource/images/community.svg" alt="Community">
-                                        <p>커뮤니티</p>
-                                    </figure>
-                                </div>
-                            </li>
-                            <li>
-                                <div>
-                                    <figure>
-                                        <img src="resource/images/column.svg" alt="Column">
-                                        <p>펫 컬럼</p>
-                                    </figure>
-                                </div>
-                            </li>                        
-                        </ul>   
-                    </div>
-                </div>
-
-                <!-- 리뷰.... 드디어!!! 이제 곧 새벽 5시다 ㅠㅠㅠㅠ -->
-                <div id="review-content">
-                    <div class="inner">
-                        <h4>과장 홍보 없는 진실된 리뷰</h4>
-                        <p>
-                            업계 최대 규모의 700만 건의 실 사용자 리뷰는<br>
-                            우리 아이에게 꼭 필요한 정보가 됩니다!
-                        </p>
-                    </div>
-
-                        <!-- 리뷰 디비전 -->
-                        <div style="text-align: center;">
-                            <div class="review-wrapper">
-                                <div class="right-review-div">
-                                        <div class="review-div">
-                                            <div class="profile-circle" style="background-image: url(resource/images/profile-circle-pic1.jpg); background-size: cover;"></div>
-                                            <div class="profile-all-text">
-                                                <p class="profile-bold-text">Mayumi</p>
-                                                <p>최고의 병원이에요!</p>         
-                                            </div>
+                                <div class="swiper-slide second">
+                                    <div class="third-feed">
+                                        <div class="feed-circle-div">
+                                            <div class="feed-circle"></div>
                                         </div>
-                                        <div class="review-div">
-                                            <div class="profile-circle" style="background-image: url(resource/images/profile-circle-pic2.jpg); background-size: cover;"></div>
-                                            <div class="profile-all-text">
-                                                <p class="profile-bold-text">Aaliyah</p>
-                                                <p>토닥펫 덕분에 좋은 정보를 얻었어요</p>
-                                            </div>
-                                        </div>
-                                        <div class="review-div">
-                                            <div class="profile-circle" style="background-image: url(resource/images/profile-circle-pic3.jpg); background-size: cover;"></div>
-                                            <div class="profile-all-text">
-                                                <p class="profile-bold-text">Evie</p>
-                                                <p>의사 선생님과 간호사 선생님이 친절했어요</p>
-                                            </div>
-                                        </div>
-                                        <div class="review-div">
-                                            <div class="profile-circle" style="background-image: url(resource/images/profile-circle-pic4.jpg); background-size: cover;"></div>
-                                            <div class="profile-all-text">
-                                                <p class="profile-bold-text">Chloé</p>
-                                                <p>가까운 병원을 찾았어요</p>
-                                            </div>
-                                        </div>
-                                </div>
-
-                                <div class="left-review-div">
-                                    <div class="review-div">
-                                        <div class="profile-circle" style="background-image: url(resource/images/profile-circle-pic5.jpg); background-size: cover;"></div>
-                                        <div class="profile-all-text">
-                                            <p class="profile-bold-text">Juliana</p>
-                                            <p>토닥펫을 통해 동물을 사랑하는 좋은 사람들을 많이 알게 되었어요</p>  
-                                        </div>                      
-                                    </div>
-                                    <div class="review-div">
-                                        <div class="profile-circle" style="background-image: url(resource/images/profile-circle-pic6.jpg); background-size: cover;"></div>
-                                        <div class="profile-all-text">
-                                            <p class="profile-bold-text">Jasmin</p>
-                                            <p>앞으로가 기대되는 서비스에요</p>
-                                        </div>
-                                    </div>
-                                    <div class="review-div">
-                                        <div class="profile-circle" style="background-image: url(resource/images/profile-circle-pic7.jpg); background-size: cover;"></div>
-                                        <div class="profile-all-text">
-                                            <p class="profile-bold-text">Hailee</p>
-                                            <p>동물병원 소셜 커머스 앱은 토닥펫이 최고죠!</p>
-                                        </div>
-                                    </div>
-                                    <div class="review-div">
-                                        <div class="profile-circle" style="background-image: url(resource/images/profile-circle-pic8.jpg); background-size: cover;"></div>
-                                        <div class="profile-all-text">
-                                            <p class="profile-bold-text">Fiona</p>
-                                            <p>초보 집사인데 많은 것을 배워 갑니다</p>
-                                        </div>
+                                        <ul class="feed-write">
+                                            <li><div></div></li>
+                                            <li><div></div></li>
+                                            <li><div></div></li>
+                                            <li><div></div></li>
+                                            <li><div></div></li>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
                         </div>
-
-                        <!-- 스마트폰 모양 디비전 -->
-                        <div class="phone-wrapper">
-                            <div class="phone-content">
-                                <div class="inner-phone">
-                                    <!-- 로고 이미지 -->
-                                    <img src="resource/images/logoOriginal.svg">
-                                    <!-- 검색창 디비전 -->
-                                    <ul class="search-bar">
-                                        <li><div></div></li>
-                                        <li><div></div></li>
-                                    </ul>
-
-                                    <div class="swiper-container second">
-                                        <div class="swiper-wrapper">
-                                            <div class="swiper-slide second">
-                                                <div class="first-feed">
-                                                    <div class="feed-circle-div">
-                                                        <div class="feed-circle"></div>
-                                                    </div>
-                                                    <div class="first-write-div">
-                                                        <ul class="feed-write">
-                                                            <li><div></div></li>
-                                                            <li><div></div></li>
-                                                            <li><div></div></li>
-                                                            <li><div></div></li>
-                                                            <li><div></div></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="swiper-slide second">
-                                                <div class="second-feed">
-                                                    <div class="feed-circle-div">
-                                                        <div class="feed-circle"></div>
-                                                    </div>
-                                                        <ul class="feed-write">
-                                                        <li><div></div></li>
-                                                        <li><div></div></li>
-                                                        <li><div></div></li>
-                                                        <li><div></div></li>
-                                                        <li><div></div></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div class="swiper-slide second">
-                                                <div class="third-feed">
-                                                    <div class="feed-circle-div">
-                                                        <div class="feed-circle"></div>
-                                                    </div>
-                                                        <ul class="feed-write">
-                                                        <li><div></div></li>
-                                                        <li><div></div></li>
-                                                        <li><div></div></li>
-                                                        <li><div></div></li>
-                                                        <li><div></div></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div class="swiper-slide second">
-                                                <div class="third-feed">
-                                                    <div class="feed-circle-div">
-                                                        <div class="feed-circle"></div>
-                                                    </div>
-                                                        <ul class="feed-write">
-                                                        <li><div></div></li>
-                                                        <li><div></div></li>
-                                                        <li><div></div></li>
-                                                        <li><div></div></li>
-                                                        <li><div></div></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>                    
+                    </div>
                 </div>
-                </div>
+            </div>                    
+        </div>
                 
-                <!-- 통계 -->
-                <div id="statistic-content">
-                    <div class="inner">
-                        <h4>오늘의 토닥펫</h4>
-                        <p>
-                            토닥펫은 매일 매일 성장하고 있는 플랫폼입니다 :)
-                        </p>
-                        <div class="circle">
-                            <div>
-                                <p>토닥펫에 만족하는 사용자의 비율</p>
-                                <p class="bigger-letter">93.2%</p>
-                            </div>
-                            <div>
-                                <p>등록된 반려동물 질병 정보</p>
-                                <p class="bigger-letter">13,478</p>
-                            </div>
-                            <div>
-                                <p>등록된 병원 리뷰</p>
-                                <p class="bigger-letter">7,937,854</p>
-                            </div>
-                        </div>
-                        <div class="pingpong-content">
-                            <div class="pingpong-animation">
-                                <div class="animation-bar animate-elements"></div>
-                                <div class="animation-bar animate-elements"></div>
-                                <div class="animation-bar animate-elements"></div>
-                                <div class="animation-bar animate-elements"></div>
-                                <div class="animation-ball animate-elements"></div>
-                            </div>
-                        </div>
+        <!-- 통계 -->
+        <div id="statistic-content">
+            <div class="inner">
+                <h4>오늘의 토닥펫</h4>
+                <p>
+                    토닥펫은 매일 매일 성장하고 있는 플랫폼입니다 :)
+                </p>
+                <div class="circle-div">
+                    <div class="animation-circle">
+                        <p>토닥펫에 만족하는 사용자의 비율</p>
+                        <p class="bigger-letter">93.2%</p>
+                    </div>
+                    <div class="animation-circle">
+                        <p>등록된 반려동물 질병 정보</p>
+                        <p class="bigger-letter">13,478</p>
+                    </div>
+                    <div class="animation-circle">
+                        <p>등록된 병원 리뷰</p>
+                        <p class="bigger-letter">7,937,854</p>
                     </div>
                 </div>
-                
-                <!-- 펫 컬럼 -->
-                <div id="column-content">
-                    <div class="inner">
-                            <div class="column-book" style="background-image: url(resource/images/column-book.svg); width: 754px; height: 542px;">
-                                <div class="column-text">
-                                    <h4>
-                                        수의사가 직접<br>
-                                        연재하는 펫 컬럼
-                                    </h4>
-                                    <p>
-                                        털복숭이 친구와 함께 한 지 얼마 되지 않은 초보 보호자를 위한 조언과<br>
-                                        노령의 아이와 함께 하는 보호자를 위한 건강 관리법까지!<br>
-                                        <br>
-                                        토닥펫 앱에서 펫 컬럼을 확인하세요 :)
-                                    </p>
-                                </div>
-                            </div>
+                <div class="pingpong-content">
+                    <div class="pingpong-animation">
+                        <div class="animation-bar animate-elements"></div>
+                        <div class="animation-bar animate-elements"></div>
+                        <div class="animation-bar animate-elements"></div>
+                        <div class="animation-bar animate-elements"></div>
+                        <div class="animation-ball animate-elements"></div>
                     </div>
-                </div>
-
-                <!-- 반응형 배너 끝 -->
-                <div class="responsive-banner-end">
-                </div>
-
-                <!-- 다운로드 -->
-                <div id="download-content">
-                    <div class="inner">
-                        <img src="resource/images/confetti.png" class="confetti">
-                        <div class="text">
-                            <h4>우리는 당신을 기다리고 있어요</h4>
-                            <p>
-                                사랑스러운 작은 동물 친구들을 위해<br>
-                                지금 당장
-                                <img src="resource/images/logoWhite.svg" alt="Logo">
-                                &nbsp;을 경험하세요!
-                            </p>
-                        </div>
-                        <div class="download-btn">
-                            <a href="#none" class="android-btn"><img id="android-btn" src="resource/images/androidDownBtn.svg" alt="Android App" ></a>
-                            <a href="#none" class="ios-btn"><img id="ios-btn" src="resource/images/iosDownBtn.svg" alt="Apple App" ></a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- 스크롤 배너 -->
-            <div class="landing-wrapper">
-                <div class="landing-inner-content">
-            
-                    <div class="box box-1">
-                        <div class="box-content">
-                            <img src="resource/images/sliderImage1.png">
-                        </div>
-                    </div>
-                
-                    <div class="box box-2">
-                        <div class="box-content">
-                            <img src="resource/images/sliderImage2.png">
-                        </div>
-                    </div>
-                
-                    <div class="box box-3">
-                        <div class="box-content">
-                            <img src="resource/images/sliderImage3.png">
-                        </div>
-                    </div>
-                
-                    <div class="box box-4">
-                        <div class="box-content">
-                            <img src="resource/images/sliderImage4.png">
-                        </div>
-                    </div>
-                
-                    <div class="box box-5">
-                        <div class="box-content">
-                            <img src="resource/images/sliderImage5.png">
-                        </div>
-                    </div>
-                
-                    <div class="box box-6">
-                        <div class="box-content">
-                            <img src="resource/images/sliderImage6.png">
-                        </div>
-                    </div>
-
-                    <div class="box box-9">
-                        <div class="box-content">
-                            <img src="resource/images/sliderImage9.jpg">
-                        </div>
-                    </div>
-
-                    <div class="box box-10">
-                        <div class="box-content">
-                            <img src="resource/images/sliderImage10.jpg">
-                        </div>
-                    </div>
-
-                    <div class="box box-12">
-                        <div class="box-content">
-                            <img src="resource/images/sliderImage12.jpg">
-                        </div>
-                    </div>
-
-                    <div class="box box-13">
-                        <div class="box-content">
-                            <img src="resource/images/sliderImage13.jpg">
-                        </div>
-                    </div>
-            
                 </div>
             </div>
+        </div>
+                
+        <!-- 펫 컬럼 -->
+        <div id="column-content">
+            <div class="inner">
+                <div class="column-book" style="background-image: url(resource/images/column-book.svg); width: 754px; height: 542px;">
+                    <div class="column-text">
+                        <h4>
+                            수의사가 직접<br>
+                            연재하는 펫 컬럼
+                        </h4>
+                        <p>
+                            털복숭이 친구와 함께 한 지 얼마 되지 않은 초보 보호자를 위한 조언과<br>
+                            노령의 아이와 함께 하는 보호자를 위한 건강 관리법까지!<br>
+                            <br>
+                            토닥펫 앱에서 펫 컬럼을 확인하세요 :)
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
+        <!-- 반응형 배너 끝 -->
+        <div class="responsive-banner-end"></div>
 
+        <!-- 다운로드 -->
+        <div id="download-content">
+            <div class="inner">
+                <img src="resource/images/confetti.png" class="confetti">
+                <div class="text">
+                    <h4>우리는 당신을 기다리고 있어요</h4>
+                    <p>
+                        사랑스러운 작은 동물 친구들을 위해<br>
+                        지금 당장
+                        <img src="resource/images/logoWhite.svg" alt="Logo">
+                        &nbsp;을 경험하세요!
+                    </p>
+                </div>
+                <div class="download-btn">
+                    <a href="#none" class="android-btn"><img id="android-btn" src="resource/images/androidDownBtn.svg" alt="Android App" ></a>
+                    <a href="#none" class="ios-btn"><img id="ios-btn" src="resource/images/iosDownBtn.svg" alt="Apple App" ></a>
+                </div>
+            </div>
+        </div>
 
-
-        </section>
-        <!-- 컨텐츠 끝 -->
+        <!-- 스크롤 배너 -->
+        <div class="landing-wrapper">
+            <div class="landing-inner-content">
+                <div class="box box-1">
+                    <div class="box-content">
+                        <img src="resource/images/sliderImage1.png">
+                    </div>
+                </div>
+                <div class="box box-2">
+                    <div class="box-content">
+                        <img src="resource/images/sliderImage2.png">
+                    </div>
+                </div>
+                <div class="box box-3">
+                    <div class="box-content">
+                        <img src="resource/images/sliderImage3.png">
+                    </div>
+                </div>
+                <div class="box box-4">
+                    <div class="box-content">
+                        <img src="resource/images/sliderImage4.png">
+                    </div>
+                </div>
+                <div class="box box-5">
+                    <div class="box-content">
+                        <img src="resource/images/sliderImage5.png">
+                    </div>
+                </div>
+                <div class="box box-6">
+                    <div class="box-content">
+                        <img src="resource/images/sliderImage6.png">
+                    </div>
+                </div>
+                <div class="box box-9">
+                    <div class="box-content">
+                        <img src="resource/images/sliderImage9.jpg">
+                    </div>
+                </div>
+                <div class="box box-10">
+                    <div class="box-content">
+                        <img src="resource/images/sliderImage10.jpg">
+                    </div>
+                </div>
+                <div class="box box-12">
+                    <div class="box-content">
+                        <img src="resource/images/sliderImage12.jpg">
+                    </div>
+                </div>
+                <div class="box box-13">
+                    <div class="box-content">
+                        <img src="resource/images/sliderImage13.jpg">
+                    </div>
+                </div>
+            
+            </div>
+        </div>
+    <!-- 컨텐츠 끝 -->
+    </section>
 
         <!-- 푸터 -->
         <footer id="footer">
