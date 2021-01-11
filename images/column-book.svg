@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="754" height="542" viewBox="0 0 754 542">
+  <defs>
+    <linearGradient id="linear-gradient" y1="0.546" x2="1" y2="0.547" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="#fff"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-4" x1="0.074" y1="0.547" x2="0.716" y2="0.545" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="#eaeaea"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-5" y1="0.546" x2="0.5" y2="0.55" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="#e5e5e5"/>
+    </linearGradient>
+  </defs>
+  <g id="그룹_301" data-name="그룹 301" transform="translate(-265 -5406)">
+    <g id="그룹_200" data-name="그룹 200" transform="translate(265 5406)">
+      <rect id="사각형_69" data-name="사각형 69" width="377" height="542" transform="translate(0 0)" fill="url(#linear-gradient)"/>
+      <rect id="사각형_70" data-name="사각형 70" width="377" height="542" transform="translate(377 0)" fill="url(#linear-gradient)"/>
+    </g>
+    <g id="그룹_202" data-name="그룹 202" transform="translate(265 5406)">
+      <rect id="사각형_69-2" data-name="사각형 69" width="377" height="542" transform="translate(0 0)" fill="url(#linear-gradient)"/>
+      <rect id="사각형_70-2" data-name="사각형 70" width="377" height="542" transform="translate(377 0)" fill="url(#linear-gradient-4)"/>
+    </g>
+    <g id="그룹_203" data-name="그룹 203" transform="translate(265 5406)">
+      <rect id="사각형_69-3" data-name="사각형 69" width="377" height="542" transform="translate(0 0)" fill="url(#linear-gradient-5)"/>
+    </g>
+  </g>
+</svg>
