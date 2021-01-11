@@ -1,5 +1,11 @@
 @charset "utf-8";
 /* 공통 요소 */
+@import url(//fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
+body {
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
 a {
     text-decoration: none;
 }
@@ -132,19 +138,25 @@ body{
 }
 .particle-div img:nth-child(1) {
     float: left;
+    margin-top: -90px;
+    margin-left: 100px;
 }
 .particle-div img:nth-child(2) {
     float: right;
+    margin-top: -130px;
+    margin-right: 70px;
 }
 .about-text p{
     font-size: 25px;
-    font-weight: lighter;
+    font-weight: normal;
     color: #252729;
     text-align: center;
     line-height: 40px;
 }
 .about-text b{
     font-weight: bolder;
+    color: #4B6E64;
+    font-size: 26px;
 }
 #about-sub-title{
     font-size: 35px;
@@ -159,13 +171,48 @@ body{
 #our-vision-content {
     position: relative;
     width: 100%;
-    height: 1786px;
+    height: 1500px;
     background-color: RGBA(135,214,171,0.5);
     text-align: center;
     padding-top: 80px;
     padding-bottom: 100px;
     box-sizing: content-box;
+    text-align: center;
 }
+#our-vision-content .inner {
+    display: inline-block;
+}
+.common-title-text {
+    margin-top: 170px;
+    margin-bottom: 100px;
+    font-size: 35px;
+    font-weight: lighter;
+    color: #252729;
+    line-height: 60px;
+    text-align: left;
+}
+.common-title-text b {
+    font-weight: bold;
+}
+.common-description {
+    float: left;
+    margin-right: 145px;
+    font-size: 25px;
+    width: 650px;
+    text-align: left;
+    line-height: 40px;
+    color: #252729;
+}
+.common-img {
+    float: right;
+}
+.common-img img {
+    width: 545px;
+    height: 669px;
+    border-radius: 55px;
+    object-fit: cover;
+}
+
 
 /* 협력사 */
 #our-clients-content {
@@ -189,6 +236,10 @@ body{
     padding-top: 80px;
     padding-bottom: 100px;
     box-sizing: content-box;
+    text-align: center;
+}
+#our-goal-content .inner {
+    display: inline-block;
 }
 
 /* 걸어온 길 */

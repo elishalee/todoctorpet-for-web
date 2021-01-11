@@ -1,5 +1,11 @@
 @charset "utf-8";
 /* 공통 요소 */
+@import url(//fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
+body {
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
 a {
     text-decoration: none;
 }
@@ -856,10 +862,6 @@ body{
         width: 100%;
 }
 
-
-
-
-
 /* 푸터 */
 #footer{
     padding-top: 50px;
@@ -937,17 +939,6 @@ body{
 .copyright{
     margin-top: 5px;
 }
-
-
-
-
-
-
-
-
-
-
-
 
 
 
