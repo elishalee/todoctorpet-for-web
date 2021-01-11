@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="207.057" height="267.974" viewBox="0 0 207.057 267.974">
+  <g id="그룹_326" data-name="그룹 326" transform="translate(-454.897 -1296.756)">
+    <line id="선_43" data-name="선 43" y1="8" x2="20" transform="matrix(0.966, -0.259, 0.259, 0.966, 502.824, 1549.043)" fill="none" stroke="#90d4c2" stroke-linecap="round" stroke-width="10"/>
+    <g id="그룹_308" data-name="그룹 308" transform="translate(-968.723 1040.76) rotate(-42)">
+      <line id="선_45" data-name="선 45" x1="21" y2="30" transform="translate(939.5 1240.5)" fill="none" stroke="#87d5d6" stroke-linecap="round" stroke-width="10"/>
+      <line id="선_46" data-name="선 46" x2="20" y2="30" transform="translate(960.5 1240.5)" fill="none" stroke="#87d5d6" stroke-linecap="round" stroke-width="10"/>
+      <line id="선_47" data-name="선 47" x2="38" transform="translate(942.5 1270.5)" fill="none" stroke="#87d5d6" stroke-linecap="round" stroke-width="10"/>
+    </g>
+    <g id="그룹_310" data-name="그룹 310" transform="matrix(0.966, -0.259, 0.259, 0.966, -1074.092, 592.07)">
+      <g id="타원_193" data-name="타원 193" transform="translate(1293 1189)" fill="none" stroke="#4b6e64" stroke-linecap="round" stroke-linejoin="round" stroke-width="10">
+        <circle cx="16" cy="16" r="16" stroke="none"/>
+        <circle cx="16" cy="16" r="11" fill="none"/>
+      </g>
+      <path id="패스_217" data-name="패스 217" d="M-21712.836,1350.213a46.29,46.29,0,0,0,16.549,15.091,26.989,26.989,0,0,0,8.246,2.793h6.5l5.426-1.365,3.582-2.622,3.3-2.877" transform="translate(23012.234 -136.707)" fill="none" stroke="#4b6e64" stroke-linecap="round" stroke-linejoin="round" stroke-width="10"/>
+      <path id="패스_218" data-name="패스 218" d="M0,0A46.287,46.287,0,0,0,16.547,15.091a27,27,0,0,0,8.247,2.793h6.5l5.427-1.365L40.3,13.9l3.3-2.877" transform="matrix(0.407, 0.914, -0.914, 0.407, 1292.025, 1171.283)" fill="none" stroke="#4b6e64" stroke-linecap="round" stroke-linejoin="round" stroke-width="10"/>
+    </g>
+    <g id="타원_196" data-name="타원 196" transform="matrix(0.966, -0.259, 0.259, 0.966, 562.869, 1477.566)" fill="none" stroke="#9cf7ab" stroke-linecap="round" stroke-linejoin="round" stroke-width="10">
+      <circle cx="17" cy="17" r="17" stroke="none"/>
+      <circle cx="17" cy="17" r="12" fill="none"/>
+    </g>
+    <circle id="타원_197" data-name="타원 197" cx="10" cy="10" r="10" transform="matrix(0.966, -0.259, 0.259, 0.966, 637.459, 1527.979)" fill="#dbf3e6"/>
+    <circle id="타원_198" data-name="타원 198" cx="18" cy="18" r="18" transform="matrix(0.966, -0.259, 0.259, 0.966, 492.531, 1319.381)" fill="#dbf3e6"/>
+  </g>
+</svg>
