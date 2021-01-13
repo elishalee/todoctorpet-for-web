@@ -222,9 +222,59 @@ body{
     background-color: #FFFFFF;
     text-align: center;
     padding-top: 80px;
-    padding-bottom: 100px;
+    padding-bottom: 50px;
     box-sizing: content-box;
+    text-align: center;
 }
+#our-clients-content .inner {
+    display: inline-block;
+}
+.circle-div {
+    text-align: center;
+    margin-left: 420px;
+}
+.circle-div-top {
+    margin-top: -100px;
+}
+.circle-div-bottom {
+    margin-top: 56px;
+}
+.circle-div div:nth-child(-n+2) {
+    margin-right: 56px;
+}
+.circle {
+    width: 300px;
+    height: 300px;
+    background-color: RGBA(177,225,212,0.5);
+    border-radius: 50%;
+    display: inline-block;
+    transition: 2s;
+}
+.circle:hover {
+    transform: scale(1.2);
+    background-color: #B1E1D4;
+}
+.circle p {
+    margin-left: 50px;
+    text-align: center;
+
+}
+.circle p:nth-child(1) {
+    margin-top: 56px;
+    margin-left: 85px;
+    font-weight: bold;
+    font-size: 25px;
+    color: #4B6E64;
+    width: 133px;
+}
+.circle p:nth-child(2) {
+    margin-top: 26px;
+    font-size: 25px;
+    color: #252729;
+    width: 205.5px;
+    line-height: 40px;
+}
+
 
 /* 목표 */
 #our-goal-content {
@@ -252,13 +302,46 @@ body{
     padding-top: 80px;
     padding-bottom: 100px;
     box-sizing: content-box;
+    text-align: center;
 }
+#our-history-content .inner {
+    display: inline-block;
+}
+.swiper-container {
+    margin-left: 226px;
+}
+.swiper-wrapper div:nth-child(-n+3) {
+    margin-right: 40px;
+}
+.swiper-slide {
+    width: 389px;
+    height: 687px;
+    border-radius: 55px;
+    text-align: left;
+}
+.swiper-slide .inner p {
+    margin-left: 47px;
+}
+.swiper-slide .inner p:nth-child(1) {
+    margin-top: 78px;
+    color: #FFFFFF;
+    font-size: 25px;
+    font-weight: bold;
+}
+.swiper-slide .inner p:nth-child(2) {
+    margin-top: 67px;
+    color: #252729;
+    font-size: 25px;
+    line-height: 40px;
+}
+
+
 
 /* 푸터 */
 #footer{
     padding-top: 50px;
     width: 100%;
-    background-color: #ffffff;
+    background-color: #FFFFFF;
     text-align:center;
 }
 #footer .inner{
